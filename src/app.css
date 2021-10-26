@@ -1,0 +1,12 @@
+@import './modules/fonts';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply text-primary;
+}
+
+.logo {
+  background-size: 520px;
+}
