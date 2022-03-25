@@ -16,11 +16,16 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*
 body {
   @apply text-primary;
-}
+} 
+*/
 
 .logo {
   background-size: 520px;
+}
+
+img {
+  pointer-events: none;
 }
