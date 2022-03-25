@@ -2,7 +2,7 @@ import Link from '@/components/Link';
 import { useTheme } from 'next-themes';
 
 const navigation = [
-  // { name: 'Giới Thiệu', href: '/about-us' },
+  // { name: 'About Us', href: '/about-us' },
 ];
 
 function classNames(...classes) {
