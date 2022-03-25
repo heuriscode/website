@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@headlessui/react': ^1.5.0
   '@tailwindcss/aspect-ratio': ^0.4.0
   '@tailwindcss/forms': ^0.5.0
   '@tailwindcss/line-clamp': ^0.3.1
@@ -15,17 +16,20 @@ specifiers:
   postcss: ^8.4.12
   react: 17.0.2
   react-dom: 17.0.2
+  react-icons: ^4.3.1
   tailwind: ^4.0.0
   tailwindcss: ^3.0.23
   typescript: ^4.6.3
 
 dependencies:
+  '@headlessui/react': 1.5.0_react-dom@17.0.2+react@17.0.2
   autoprefixer: 10.4.4_postcss@8.4.12
   next: 12.1.0_react-dom@17.0.2+react@17.0.2
   next-themes: 0.1.1_caa633a00319350dbda42996613fe26c
   postcss: 8.4.12
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-icons: 4.3.1_react@17.0.2
   tailwind: 4.0.0
   tailwindcss: 3.0.23_autoprefixer@10.4.4
   typescript: 4.6.3
@@ -112,6 +116,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/react/1.5.0_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-aaRnYxBb3MU2FNJf3Ut9RMTUqqU3as0aI1lQhgo2n9Fa67wRu14iOGqx93xB+uMNVfNwZ5B3y/Ndm7qZGuFeMQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+    dev: false
 
   /@humanwhocodes/config-array/0.9.3:
     resolution: {integrity: sha512-3xSMlXHh03hCcCmFc0rbKp3Ivt2PFEJnQUJDDMTJQ2wkECZWdq4GePs2ctc5H8zV+cHPaq8k2vU8mrQjA6iHdQ==}
@@ -2411,6 +2426,14 @@ packages:
       object-assign: 4.1.1
       react: 17.0.2
       scheduler: 0.20.2
+    dev: false
+
+  /react-icons/4.3.1_react@17.0.2:
+    resolution: {integrity: sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /react-is/16.13.1:
