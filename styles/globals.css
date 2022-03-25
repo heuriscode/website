@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'aileronregular';
+  src: url('/fonts/aileron-regular-webfont.woff2') format('woff2'),
+    url('/fonts/aileron-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nowbold';
+  src: url('/fonts/now.bold-webfont.woff2') format('woff2'), url('/fonts/now.bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply text-primary;
+}
+
+.logo {
+  background-size: 520px;
+}
