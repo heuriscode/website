@@ -10,6 +10,12 @@ export default function Header({ department, description }) {
           <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
             Start building for free, then add a site plan to go live. Account plans unlock additional features.
           </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center w-full px-5 py-3 mt-8 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md sm:w-auto"
+          >
+            Contact us
+          </a>
         </div>
       </div>
     </div>
