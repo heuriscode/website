@@ -1,15 +1,10 @@
-import { useState } from 'react';
-import { Switch } from '@headlessui/react';
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 export default function Contact() {
-  const [agreed, setAgreed] = useState(false);
-
   return (
-    <div className="px-4 py-16 overflow-hidden bg-white sm:px-6 lg:px-8 lg:py-24">
+    <div className="px-4 py-16 overflow-hidden bg-white sm:px-6 lg:px-8 lg:py-20" id="contact">
       <div className="relative max-w-xl mx-auto">
         <svg
           className="absolute transform translate-x-1/2 left-full"
