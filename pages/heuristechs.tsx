@@ -2,14 +2,16 @@ import StaffsCard from '@/components/StaffsCard';
 import ContactPage from '@/components/ContactPage';
 import Header from '@/components/Header';
 import Portfolio from '@/components/Portfolio';
+import Navbar from '@/components/Layout/Navbar';
 
 export default function Heuristechs() {
   return (
     <>
+      <Navbar />
       {/* can make them all dynamic */}
       <Header department="Heuristechs" description="The tech side of the business" />
-      <StaffsCard people={people} />
       <Portfolio work={work} />
+      <StaffsCard people={people} />
       <ContactPage />
     </>
   );
@@ -17,8 +19,8 @@ export default function Heuristechs() {
 
 const people = [
   {
-    name: 'Jack',
-    role: 'Co-Founder / CEO',
+    name: 'Daniel Gregg',
+    role: 'Founder / CEO',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
@@ -26,8 +28,8 @@ const people = [
     linkedinUrl: '#',
   },
   {
-    name: 'Daniel Gregg',
-    role: 'Co-Founder / CEO',
+    name: 'Jack',
+    role: 'Lead Developer / Heuristechs',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
@@ -36,7 +38,7 @@ const people = [
   },
   {
     name: 'Tom',
-    role: 'Co-Founder / CEO',
+    role: 'Developer / Heuristechs',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',

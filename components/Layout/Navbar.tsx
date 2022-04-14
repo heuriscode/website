@@ -1,28 +1,24 @@
-// import { LinkButton, LinkComponent } from '@/components/Link';
-import { useTheme } from 'next-themes';
+import { LinkComponent } from '@/components/Link';
+import { useRouter } from 'next/router';
+import Themes from './Themes';
+import Image from 'next/image';
 
-const navigation = [
-  // { name: 'About Us', href: '/about-us' },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+// const navigation = [{ name: 'Home', href: '/' }];
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
+  const router = useRouter();
 
   return (
     <nav className="container dark:text-stone-200">
-      add navigation here
-      <div>
-        The current theme is: {theme}
-        <button onClick={() => setTheme('light')} className="p-2 border rounded">
-          Light Mode
-        </button>
-        <button onClick={() => setTheme('dark')} className="p-2 border rounded">
-          Dark Mode
-        </button>
+      <div className="flex items-center justify-between py-6">
+        <LinkComponent href="/">
+          {/* TODO: create svg without text */}
+          {/* Home */}
+          <Image src="/heuris-logo-vector.svg" height={180} width={180} />
+        </LinkComponent>
+        <Themes />
+        {router.pathname === '/heuris' && <LinkComponent href="/heuristechs">Heuristechs</LinkComponent>}
+        {router.pathname === '/heuristechs' && <LinkComponent href="/heuris">Heuris</LinkComponent>}
       </div>
     </nav>
   );

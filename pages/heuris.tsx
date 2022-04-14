@@ -2,14 +2,16 @@ import StaffsCard from '@/components/StaffsCard';
 import ContactPage from '@/components/ContactPage';
 import Header from '@/components/Header';
 import Portfolio from '@/components/Portfolio';
+import Navbar from '@/components/Layout/Navbar';
 
 export default function Heuris() {
   return (
     <>
+      <Navbar />
       {/* can make them all dynamic */}
       <Header department="Heuris" description="The brain of the business" />
-      <StaffsCard people={people} />
       <Portfolio work={work} />
+      <StaffsCard people={people} />
       <ContactPage />
     </>
   );
