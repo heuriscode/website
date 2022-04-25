@@ -79,15 +79,11 @@ export default function Navbar() {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
               <span className="sr-only">Workflow</span>
-              <img
-                className="w-auto h-8 sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
-                alt=""
-              />
+              <img className="w-auto h-12 sm:h-14" src="/heuris-logo.svg" alt="heuris logo" />
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
@@ -130,7 +126,7 @@ export default function Navbar() {
                               href={item.href}
                               className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                             >
-                              <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 sm:h-12 sm:w-12">
+                              <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-md bg-gradient-to-r from-green-600 to-emerald-600 sm:h-12 sm:w-12">
                                 <item.icon className="w-6 h-6" aria-hidden="true" />
                               </div>
                               <div className="ml-4">
@@ -160,7 +156,7 @@ export default function Navbar() {
             </a>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
             >
               Sign up
             </a>
@@ -184,14 +180,10 @@ export default function Navbar() {
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <img
-                      className="w-auto h-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-purple-600-to-indigo-600.svg"
-                      alt="Workflow"
-                    />
+                    <img className="w-auto h-12" src="/heuris-logo.svg" alt="heuris logo" />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
                       <span className="sr-only">Close menu</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
@@ -205,7 +197,7 @@ export default function Navbar() {
                         href={item.href}
                         className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-md bg-gradient-to-r from-green-600 to-emerald-600">
                           <item.icon className="w-6 h-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
@@ -229,7 +221,7 @@ export default function Navbar() {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
+                    className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
                   >
                     Sign up
                   </a>

@@ -11,7 +11,7 @@ export default function Cards() {
             <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
               <div>
                 <div>
-                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-emerald-600 to-green-600">
                     <InboxIcon className="w-6 h-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
@@ -25,7 +25,7 @@ export default function Cards() {
                   <div className="mt-6">
                     <a
                       href="#"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-emerald-600 to-green-600 bg-origin-border hover:from-emerald-700 hover:to-green-700"
                     >
                       Get started
                     </a>
@@ -87,12 +87,12 @@ export default function Cards() {
             <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
               <div>
                 <div>
-                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
+                  <span className="flex items-center justify-center w-12 h-12 rounded-md bg-gradient-to-r from-emerald-600 to-green-600">
                     <InboxIcon className="w-6 h-6 text-white" aria-hidden="true" />
                   </span>
                 </div>
                 <div className="mt-6">
-                  <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">How we do</h2>
+                  <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">What we do</h2>
                   <p className="mt-4 text-lg text-gray-500">
                     Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis bibendum malesuada faucibus lacinia
                     porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus
@@ -101,7 +101,7 @@ export default function Cards() {
                   <div className="mt-6">
                     <a
                       href="#"
-                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
+                      className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-emerald-600 to-green-600 bg-origin-border hover:from-emerald-700 hover:to-green-700"
                     >
                       Get started
                     </a>
