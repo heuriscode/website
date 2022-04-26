@@ -5,8 +5,8 @@ export default function Hero() {
         <img
           src="/heuris-logo-label.svg"
           alt="heuris logo"
-          width={350}
-          height={350}
+          width={400}
+          height={400}
           className="relative px-4 pb-2 mx-auto sm:px-6 lg:px-8"
         />
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">

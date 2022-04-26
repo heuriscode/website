@@ -15,7 +15,7 @@ export default function Contact() {
               href="#"
               className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-emerald-600 to-green-600 bg-origin-border hover:from-emerald-700 hover:to-green-700"
             >
-              Contact
+              Contact Us
             </a>
           </div>
         </div>
