@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <>
-      <div className="pt-10 text-center">
+      <div className="px-4 pt-10 mx-auto mb-2 text-center max-w-7xl ">
         <img
           src="/heuris-logo-label.svg"
           alt="heuris logo"

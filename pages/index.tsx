@@ -1,4 +1,3 @@
-import { LinkButton } from '@/components/Link';
 import HeroPage from '@/components/Home/Hero';
 import Services from '@/components/Home/Services';
 import Layout from '@/components/Layout/Layout';

@@ -4,7 +4,7 @@ function classNames(...classes) {
 
 export default function Contact() {
   return (
-    <div className="px-4 py-16 overflow-hidden bg-white sm:px-6 lg:px-8 lg:py-20" id="contact">
+    <div className="px-4 py-16 overflow-hidden bg-white sm:px-6 lg:px-8" id="contact">
       <div className="relative max-w-xl mx-auto">
         <svg
           className="absolute transform translate-x-1/2 left-full"
@@ -69,7 +69,7 @@ export default function Contact() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Contact() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-emerald-500 focus:border-emerald-500"
                   placeholder="+1 (555) 987-6543"
                 />
               </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
                   defaultValue={''}
                 />
               </div>
@@ -147,7 +147,7 @@ export default function Contact() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
               >
                 Lets talk
               </button>

@@ -66,9 +66,9 @@ export default function Navbar() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-            <a href="/teams" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <LinkComponent href="/teams" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Our Team
-            </a>
+            </LinkComponent>
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -128,12 +128,12 @@ export default function Navbar() {
             </a>
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-            <a
-              href="#"
+            <LinkComponent
+              href="/contact"
               className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-600 hover:to-emerald-700"
             >
               Contact Us
-            </a>
+            </LinkComponent>
           </div>
         </div>
 
@@ -193,18 +193,12 @@ export default function Navbar() {
                   </a>
                 </div>
                 <div className="mt-6">
-                  <a
-                    href="#"
+                  <LinkComponent
+                    href="/contact"
                     className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
                   >
-                    Sign up
-                  </a>
-                  <p className="mt-6 text-base font-medium text-center text-gray-500">
-                    Existing customer?
-                    <a href="#" className="text-gray-900">
-                      Sign in
-                    </a>
-                  </p>
+                    Contact Us
+                  </LinkComponent>
                 </div>
               </div>
             </div>
