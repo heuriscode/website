@@ -126,7 +126,7 @@ export default function Navbar() {
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <a
               href="#"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-600 hover:to-emerald-700"
             >
               Contact Us
             </a>

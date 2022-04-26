@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import { LinkButton } from '@/components/Link';
 import Layout from '@/components/Layout/Layout';
 import Header from '@/components/Header';
 import Portfolio from '@/components/Portfolio';
