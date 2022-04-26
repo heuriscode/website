@@ -1,13 +1,13 @@
-export interface TeamsCardType {
+export type TeamsCardType = {
   heuris?: TeamsCardData[];
   heuristechs?: TeamsCardData[];
-}
+};
 
-export interface TeamsCardData {
+export type TeamsCardData = {
   name: string;
   role: string;
   imageUrl: string;
   bio: string;
   twitterUrl: string;
   linkedinUrl: string;
-}
+};
