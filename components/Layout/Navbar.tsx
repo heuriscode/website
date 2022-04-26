@@ -1,10 +1,8 @@
 import { LinkComponent } from '@/components/Link';
-import { useRouter } from 'next/router';
 import Themes from './Themes';
-import Image from 'next/image';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { classNames } from '@/utils/classNames';
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
   AnnotationIcon,
@@ -15,13 +13,6 @@ import {
   XIcon,
 } from '@heroicons/react/outline';
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Teams', href: '/teams' },
-  { name: 'Contact', href: '/contact' },
-  { name: 'Services', href: '/services' },
-];
 const solutions = [
   {
     name: 'Inbox',
@@ -45,10 +36,23 @@ const solutions = [
 ];
 
 export default function Navbar() {
+  useEffect(() => {
+    window.addEventListener('scroll', (e) => {
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = 0;
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (scrollTop > navbarHeight) {
+        navbar.classList.add('navStyle');
+      } else {
+        navbar.classList.remove('navStyle');
+      }
+    });
+  });
+
   return (
-    <header>
+    <header className="sticky top-0 z-10 navbar">
       <Popover className="relative bg-white">
-        <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <div className="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <LinkComponent href="/">
               <span className="sr-only">Heuris</span>
@@ -74,7 +78,7 @@ export default function Navbar() {
                       'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none'
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Our Services</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -119,7 +123,7 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a href="/work" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Work
             </a>
           </Popover.Group>
