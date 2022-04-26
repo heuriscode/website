@@ -13,6 +13,7 @@ specifiers:
   eslint: 8.13.0
   eslint-config-next: 12.1.5
   next: 12.1.5
+  next-seo: ^5.4.0
   next-themes: ^0.1.1
   postcss: ^8.4.12
   react: 18.0.0
@@ -26,6 +27,7 @@ dependencies:
   '@heroicons/react': 1.0.6_react@18.0.0
   autoprefixer: 10.4.4_postcss@8.4.12
   next: 12.1.5_react-dom@18.0.0+react@18.0.0
+  next-seo: 5.4.0_1cf2cc49e2c27648b440cc4e09213966
   next-themes: 0.1.1_1cf2cc49e2c27648b440cc4e09213966
   postcss: 8.4.12
   react: 18.0.0
@@ -1473,6 +1475,18 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
+
+  /next-seo/5.4.0_1cf2cc49e2c27648b440cc4e09213966:
+    resolution: {integrity: sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.1.5_react-dom@18.0.0+react@18.0.0
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+    dev: false
 
   /next-themes/0.1.1_1cf2cc49e2c27648b440cc4e09213966:
     resolution: {integrity: sha512-Iqxt6rhS/KfK/iHJ0tfFjTcdLEAI0AgwFuAFrMwLOPK5e+MI3I+fzyvBoS+VaOS+NldUiazurhgwYhrfV0VXsQ==}

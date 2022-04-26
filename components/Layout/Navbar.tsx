@@ -9,17 +9,9 @@ import { Popover, Transition } from '@headlessui/react';
 import {
   AnnotationIcon,
   ChatAlt2Icon,
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
   InboxIcon,
   MenuIcon,
-  PencilAltIcon,
   QuestionMarkCircleIcon,
-  ReplyIcon,
-  SparklesIcon,
-  TrashIcon,
-  UsersIcon,
   XIcon,
 } from '@heroicons/react/outline';
 
@@ -53,34 +45,15 @@ const solutions = [
 ];
 
 export default function Navbar() {
-  // const router = useRouter();
-
   return (
-    // <nav className="container dark:text-stone-200">
-    //   <div className="flex items-center justify-between py-6">
-    //     <LinkComponent href="/">
-    //       {/* TODO: create svg without text */}
-    //       {/* Home */}
-    //       <Image src="/heuris-logo.svg" alt="Heuris logo" height={70} width={70} />
-    //     </LinkComponent>
-    //     {/* <Themes /> */}
-    //     {navigation.map((item) => (
-    //       <LinkComponent key={item.name} href={item.href}>
-    //         {item.name}
-    //       </LinkComponent>
-    //     ))}
-    //     {router.pathname === '/heuris' && <LinkComponent href="/heuristechs">Heuristechs</LinkComponent>}
-    //     {router.pathname === '/techs' && <LinkComponent href="/heuris">Heuris</LinkComponent>}
-    //   </div>
-    // </nav>
     <header>
       <Popover className="relative bg-white">
         <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">Workflow</span>
+            <LinkComponent href="/">
+              <span className="sr-only">Heuris</span>
               <img className="w-auto h-12 sm:h-14" src="/heuris-logo.svg" alt="heuris logo" />
-            </a>
+            </LinkComponent>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
@@ -89,6 +62,9 @@ export default function Navbar() {
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+            <a href="/teams" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              Our Team
+            </a>
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -121,7 +97,7 @@ export default function Navbar() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8 lg:grid-cols-2">
                           {solutions.map((item) => (
-                            <a
+                            <LinkComponent
                               key={item.name}
                               href={item.href}
                               className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
@@ -133,7 +109,7 @@ export default function Navbar() {
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
-                            </a>
+                            </LinkComponent>
                           ))}
                         </div>
                       </div>
@@ -143,22 +119,16 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Our Team
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a href="/work" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Work
             </a>
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-            <a href="#" className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900">
-              Sign in
-            </a>
             <a
               href="#"
               className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
             >
-              Sign up
+              Contact Us
             </a>
           </div>
         </div>

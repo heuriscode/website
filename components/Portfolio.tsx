@@ -5,13 +5,7 @@ export default function Portfolio({ work }) {
         <div className="bg-white h-1/3 sm:h-2/3" />
       </div>
       <div className="relative mx-auto max-w-7xl">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Our projects</h2>
-          <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
-          </p>
-        </div>
-        <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+        <div className="grid max-w-lg mx-auto mt-12 gap-x-6 gap-y-10 lg:grid-cols-3 lg:max-w-none">
           {work.map((post) => (
             <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
               <div className="flex-shrink-0">
@@ -19,14 +13,14 @@ export default function Portfolio({ work }) {
               </div>
               <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-indigo-600">
+                  <p className="text-sm font-medium text-emerald-600">
                     <a href={post.category.href} className="hover:underline">
                       {post.category.name}
                     </a>
                   </p>
                   <a href={post.href} className="block mt-2">
-                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
-                    <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                    <p className="text-xl font-semibold text-gray-900 line-clamp-2 overflow-ellipsis">{post.title}</p>
+                    <p className="mt-3 text-base text-gray-500 line-clamp-3 overflow-ellipsis">{post.description}</p>
                   </a>
                 </div>
                 <div className="flex items-center mt-6">
