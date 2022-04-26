@@ -9,9 +9,9 @@ export default function Heuristechs() {
     <>
       <Navbar />
       {/* can make them all dynamic */}
-      <Header department="Heuristechs" description="The tech side of the business" />
+      <Header title="Heuristechs" name="Heuristechs" description="The tech side of the business" />
       <Portfolio work={work} />
-      <StaffsCard people={people} />
+      <StaffsCard heuris={people} />
       <ContactPage />
     </>
   );

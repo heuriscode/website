@@ -1,6 +1,7 @@
 import { AiFillMail, AiFillFile, AiFillLinkedin } from 'react-icons/ai';
+import { TeamsCardType } from '@/utils/types';
 
-export default function StaffsCard({ heuris, heuristechs }) {
+export default function TeamsCard({ heuris, heuristechs }: TeamsCardType) {
   return (
     <div className="bg-white">
       {/* Heuris */}
