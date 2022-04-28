@@ -1,7 +1,3 @@
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-
 export default function Contact() {
   return (
     <div className="px-4 py-16 overflow-hidden bg-white sm:px-6 lg:px-8" id="contact">
@@ -126,7 +122,7 @@ export default function Contact() {
                   id="phone-number"
                   autoComplete="tel"
                   className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-emerald-500 focus:border-emerald-500"
-                  placeholder="+1 (555) 987-6543"
+                  placeholder="+61 555 987 543"
                 />
               </div>
             </div>
