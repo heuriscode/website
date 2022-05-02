@@ -7,7 +7,7 @@ import groq from 'groq';
 import { LinkComponent } from '@/components/Link';
 
 export default function Work({ posts }) {
-  console.log(posts);
+  // console.log(posts);
 
   const data = {
     name: 'Work',

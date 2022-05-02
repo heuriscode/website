@@ -8,21 +8,21 @@ import { DefaultSeo } from '@/components/SEO/SEO';
 import { urlFor } from '@/utils/sanityImage';
 
 const PostLayout = ({ post }) => {
-  const {
-    title = 'Missing title',
-    description,
-    name = 'Missing name',
-    categories,
-    mainImage,
-    authorImage,
-    body = [],
-  } = post;
+  // const {
+  //   // title = 'Missing title',
+  //   description,
+  //   name = 'Missing name',
+  //   categories,
+  //   mainImage,
+  //   authorImage,
+  //   body = [],
+  // } = post;
 
   const seoData = {
-    title,
-    description,
+    title: post?.title,
+    description: post?.description,
   };
-  console.log(post);
+  // console.log(title);
 
   return (
     <Layout>
@@ -30,46 +30,38 @@ const PostLayout = ({ post }) => {
 
       <article className={`${styles.content} max-w-3xl py-8 mx-auto`}>
         <div className="mb-8 text-center">
-          <time dateTime={post.publishedAt} className="mb-1 text-xs text-gray-600">
-            {format(parseISO(post.publishedAt), 'd LLLL, yyyy')}
-          </time>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          {authorImage && (
+          {post?.publishedAt && (
+            <time dateTime={post?.publishedAt} className="mb-1 text-xs text-gray-600">
+              {format(parseISO(post?.publishedAt), 'd LLLL, yyyy')}
+            </time>
+          )}
+
+          <h1>{post?.title}</h1>
+          <p>{post?.description}</p>
+          {post?.authorImage && (
             <div>
-              <img src={urlFor(authorImage).width(80).url()} alt={`${name}'s picture`} />
+              <img src={urlFor(post?.authorImage).width(80).url()} alt={`${post?.name}'s picture`} />
             </div>
           )}
         </div>
-        {categories && (
+        {post?.categories && (
           <ul>
             Posted in
-            {categories.map((category) => (
+            {post?.categories.map((category) => (
               <li key={category}>{category}</li>
             ))}
           </ul>
         )}
-        {mainImage && (
+        {post?.mainImage && (
           <div>
-            <img src={urlFor(mainImage).width(1600).url()} alt={''} />
+            <img src={urlFor(post?.mainImage).width(1600).url()} alt={''} />
           </div>
         )}
-        <PortableText value={body} components={ptComponents} />
+        <PortableText value={post?.body} components={ptComponents} />
       </article>
     </Layout>
   );
 };
-
-const query = groq`*[_type == "post" && slug.current == $slug][0]{
-  title,
-  "name": author->name,
-  "authorImage": author->image,
-  "categories": categories[]->title,
-  mainImage,
-  publishedAt,
-  description,
-  body
-}`;
 
 // Sanity
 export async function getStaticPaths() {
@@ -81,6 +73,16 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  const query = groq`*[_type == "post" && slug.current == $slug][0]{
+  title,
+  "name": author->name,
+  "authorImage": author->image,
+  "categories": categories[]->title,
+  mainImage,
+  publishedAt,
+  description,
+  body
+}`;
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = '' } = params;
   const post = await client.fetch(query, { slug });
