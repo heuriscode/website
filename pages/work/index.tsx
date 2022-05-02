@@ -20,15 +20,6 @@ export default function Work({ posts }) {
       <DefaultSeo seoData={data} />
       <Header name={data.name} title={data.title} description={data.description} />
       <Portfolio work={posts} />
-      {/* {posts.length > 0 &&
-        posts.map((post) => (
-          <li key={post._id}>
-            <LinkComponent href={`/work/${post.slug.current}`}>
-              <a>{post.title}</a>
-            </LinkComponent>{' '}
-            ({new Date(post.publishedAt).toDateString()})
-          </li>
-        ))} */}
     </Layout>
   );
 }

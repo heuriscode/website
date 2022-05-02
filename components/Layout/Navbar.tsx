@@ -123,9 +123,9 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <LinkComponent href="/work" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Work
-            </a>
+            </LinkComponent>
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <LinkComponent

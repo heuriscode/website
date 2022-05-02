@@ -62,7 +62,7 @@ const PostLayout = ({ post }) => {
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
-  "authorName": author->name,
+  "name": author->name,
   "authorImage": author->image,
   "categories": categories[]->title,
   mainImage,
