@@ -3,7 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@headlessui/react': ^1.6.0
   '@heroicons/react': ^1.0.6
+  '@portabletext/react': ^1.0.6
   '@sanity/client': ^3.3.0
+  '@sanity/image-url': ^1.0.1
   '@tailwindcss/aspect-ratio': ^0.4.0
   '@tailwindcss/forms': ^0.5.0
   '@tailwindcss/line-clamp': ^0.3.1
@@ -14,6 +16,7 @@ specifiers:
   date-fns: ^2.28.0
   eslint: 8.14.0
   eslint-config-next: 12.1.5
+  groq: ^2.29.3
   next: 12.1.5
   next-seo: ^5.4.0
   next-themes: ^0.1.1
@@ -27,9 +30,12 @@ specifiers:
 dependencies:
   '@headlessui/react': 1.6.0_zpnidt7m3osuk7shl3s4oenomq
   '@heroicons/react': 1.0.6_react@18.0.0
+  '@portabletext/react': 1.0.6_react@18.0.0
   '@sanity/client': 3.3.0
+  '@sanity/image-url': 1.0.1
   autoprefixer: 10.4.5_postcss@8.4.12
   date-fns: 2.28.0
+  groq: 2.29.3
   next: 12.1.5_zpnidt7m3osuk7shl3s4oenomq
   next-seo: 5.4.0_dtzmyspcyj3erncazrhasijzmy
   next-themes: 0.1.1_dtzmyspcyj3erncazrhasijzmy
@@ -254,6 +260,27 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
+  /@portabletext/react/1.0.6_react@18.0.0:
+    resolution: {integrity: sha512-j6BprLiwFz3zr1Lo6BxM2sQ1b3g1JIjGwePeuxqSfbBiEYbGXn2izEckMJ02hSa1f7+RCEUJ+Bojvtzz6BBUaw==}
+    peerDependencies:
+      react: ^17 || ^18
+    dependencies:
+      '@portabletext/toolkit': 1.0.5
+      '@portabletext/types': 1.0.3
+      react: 18.0.0
+    dev: false
+
+  /@portabletext/toolkit/1.0.5:
+    resolution: {integrity: sha512-kwVOfVoquufDQNmzzhGxji9A+/T+dhLKKOHEHldM1kMUoNzY6wwrt5H/Plnw4xbdE780kkwqJqHxjxoSYr706A==}
+    dependencies:
+      '@portabletext/types': 1.0.3
+    dev: false
+
+  /@portabletext/types/1.0.3:
+    resolution: {integrity: sha512-SDDsdury2SaTI2D5Ea6o+Y39SSZMYHRMWJHxkxYl3yzFP0n/0EknOhoXcoaV+bxGr2dTTqZi2TOEj+uWYuavSw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
   /@rushstack/eslint-patch/1.0.8:
     resolution: {integrity: sha512-ZK5v4bJwgXldAUA8r3q9YKfCwOqoHTK/ZqRjSeRXQrBXWouoPnS4MQtgC4AXGiiBuUu5wxrRgTlv0ktmM4P1Aw==}
     dev: true
@@ -279,6 +306,11 @@ packages:
 
   /@sanity/generate-help-url/3.0.0:
     resolution: {integrity: sha512-wtMYcV5GIDIhVyF/jjmdwq1GdlK07dRL40XMns73VbrFI7FteRltxv48bhYVZPcLkRXb0SHjpDS/icj9/yzbVA==}
+    dev: false
+
+  /@sanity/image-url/1.0.1:
+    resolution: {integrity: sha512-AdKQ3zMk7WdoNwoJPrAvQhW+kUtBldBX0nHtnGy+rwmgsCQ0rAXasrgH43Fhmsp/yB6piiq+F2d5qEuBFsdQVg==}
+    engines: {node: '>=10.0.0'}
     dev: false
 
   /@sanity/timed-out/4.0.2:
@@ -1293,6 +1325,11 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
+
+  /groq/2.29.3:
+    resolution: {integrity: sha512-j3HFq8Qwg36rREp2Xl2vecUz47LX6cedD8cqq+JKX0iNj9yiwelOSKpRS5jxhkDZQv5xBAiqtpU2Ylv5DQ5g2A==}
+    engines: {node: '>=6'}
+    dev: false
 
   /has-bigints/1.0.1:
     resolution: {integrity: sha512-LSBS2LjbNBTf6287JEbEzvJgftkF5qFkmCo9hDRpAzKhUOlJ+hx8dd4USs00SgsUNwc4617J9ki5YtEClM2ffA==}

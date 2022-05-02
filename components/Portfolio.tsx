@@ -1,3 +1,6 @@
+import { urlFor } from '@/utils/sanityImage';
+import { format, parseISO } from 'date-fns';
+
 export default function Portfolio({ work }) {
   return (
     <div className="relative px-4 pt-16 pb-20 bg-gray-50 sm:px-6 lg:pt-20 lg:pb-24 lg:px-8">
@@ -9,37 +12,45 @@ export default function Portfolio({ work }) {
           {work.map((post) => (
             <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
               <div className="flex-shrink-0">
-                <img className="object-cover w-full h-48" src={post.imageUrl} alt="" />
+                <img className="object-cover w-full h-48" src={urlFor(post.mainImage).width(1000).url()} alt="" />
               </div>
               <div className="flex flex-col justify-between flex-1 p-6 bg-white">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-emerald-600">
-                    <a href={post.category.href} className="hover:underline">
-                      {post.category.name}
+                    <a href={'#'} className="hover:underline">
+                      {'Category Name'}
                     </a>
                   </p>
-                  <a href={post.href} className="block mt-2">
+                  <a href={post.slug.current} className="block mt-2">
                     <p className="text-xl font-semibold text-gray-900 line-clamp-2 overflow-ellipsis">{post.title}</p>
                     <p className="mt-3 text-base text-gray-500 line-clamp-3 overflow-ellipsis">{post.description}</p>
                   </a>
                 </div>
                 <div className="flex items-center mt-6">
-                  <div className="flex-shrink-0">
-                    <a href={post.author.href}>
-                      <span className="sr-only">{post.author.name}</span>
-                      <img className="w-10 h-10 rounded-full" src={post.author.imageUrl} alt="" />
-                    </a>
-                  </div>
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-900">
-                      <a href={post.author.href} className="hover:underline">
-                        {post.author.name}
+                  {post.authorImage && (
+                    <div className="flex-shrink-0">
+                      <a href={'#'}>
+                        <span className="sr-only">{post.authorName}</span>
+                        <img
+                          className="w-10 h-10 rounded-full"
+                          src={urlFor(post.authorImage).width(100).url()}
+                          alt=""
+                        />
                       </a>
-                    </p>
+                    </div>
+                  )}
+
+                  <div className="ml-3">
+                    {post.authorName && (
+                      <p className="text-sm font-medium text-gray-900">
+                        <a href={'#'} className="hover:underline">
+                          {post.authorName}
+                        </a>
+                      </p>
+                    )}
+
                     <div className="flex space-x-1 text-sm text-gray-500">
-                      <time dateTime={post.datetime}>{post.date}</time>
-                      <span aria-hidden="true">&middot;</span>
-                      <span>{post.readingTime} read</span>
+                      <time dateTime={post.publishedAt}>{format(parseISO(post.publishedAt), 'd LLLL, yyyy')}</time>
                     </div>
                   </div>
                 </div>

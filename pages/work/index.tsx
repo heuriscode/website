@@ -2,10 +2,12 @@ import Layout from '@/components/Layout/Layout';
 import Header from '@/components/Header';
 import Portfolio from '@/components/Portfolio';
 import { DefaultSeo } from '@/components/SEO/SEO';
-import { allPosts } from '.contentlayer/generated';
+import client from '@/client';
+import groq from 'groq';
+import { LinkComponent } from '@/components/Link';
 
-export default function Work({ post }) {
-  console.log(post);
+export default function Work({ posts }) {
+  console.log(posts);
 
   const data = {
     name: 'Work',
@@ -17,16 +19,36 @@ export default function Work({ post }) {
     <Layout>
       <DefaultSeo seoData={data} />
       <Header name={data.name} title={data.title} description={data.description} />
-      <Portfolio work={work} />
+      <Portfolio work={posts} />
+      {/* {posts.length > 0 &&
+        posts.map((post) => (
+          <li key={post._id}>
+            <LinkComponent href={`/work/${post.slug.current}`}>
+              <a>{post.title}</a>
+            </LinkComponent>{' '}
+            ({new Date(post.publishedAt).toDateString()})
+          </li>
+        ))} */}
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const post = allPosts;
+  const posts = await client.fetch(groq`
+      *[_type == "post" && publishedAt < now()]{ 
+        title,
+        "authorName": author->name,
+        "authorImage": author->image,
+        "categories": categories[]->title,
+        mainImage,
+        publishedAt,
+        description,
+        slug
+      } | order(publishedAt desc)
+    `);
   return {
     props: {
-      post,
+      posts,
     },
   };
 }
@@ -84,24 +106,6 @@ const work = [
       href: '#',
       imageUrl:
         'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  {
-    title: 'Boost your conversion rate',
-    href: '#',
-    category: { name: 'Article', href: '#' },
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    readingTime: '6 min',
-    author: {
-      name: 'Roel Aufderehar',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
   },
 ];
