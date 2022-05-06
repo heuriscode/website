@@ -8,56 +8,43 @@ import { DefaultSeo } from '@/components/SEO/SEO';
 import { urlFor } from '@/utils/sanityImage';
 
 const PostLayout = ({ post }) => {
-  // const {
-  //   // title = 'Missing title',
-  //   description,
-  //   name = 'Missing name',
-  //   categories,
-  //   mainImage,
-  //   authorImage,
-  //   body = [],
-  // } = post;
-
   const seoData = {
     title: post?.title,
     description: post?.description,
   };
-  // console.log(title);
 
   return (
     <Layout>
       <DefaultSeo seoData={seoData} />
 
-      <article className={`${styles.content} max-w-3xl py-8 mx-auto`}>
-        <div className="mb-8 text-center">
-          {post?.publishedAt && (
-            <time dateTime={post?.publishedAt} className="mb-1 text-xs text-gray-600">
-              {format(parseISO(post?.publishedAt), 'd LLLL, yyyy')}
-            </time>
-          )}
-
+      <article className={`max-w-7xl mx-auto`}>
+        {post?.mainImage && (
+          <img src={urlFor(post?.mainImage).width(1600).height(350).url()} alt={''} className="rounded" />
+        )}
+        <div className="max-w-5xl py-10 mx-auto prose text-center">
           <h1>{post?.title}</h1>
-          <p>{post?.description}</p>
-          {post?.authorImage && (
-            <div>
-              <img src={urlFor(post?.authorImage).width(80).url()} alt={`${post?.name}'s picture`} />
-            </div>
-          )}
         </div>
         {post?.categories && (
-          <ul>
-            Posted in
+          <ul className="flex justify-center gap-2 mb-4">
             {post?.categories.map((category) => (
-              <li key={category}>{category}</li>
+              <li key={category} className="px-3 py-0.5 rounded-full bg-green-800/30">
+                {category}
+              </li>
             ))}
           </ul>
         )}
-        {post?.mainImage && (
-          <div>
-            <img src={urlFor(post?.mainImage).width(1600).url()} alt={''} />
-          </div>
-        )}
-        <PortableText value={post?.body} components={ptComponents} />
+
+        <div className={`${styles.content} mx-auto`}>
+          {post?.publishedAt && (
+            <div className="mb-4 text-right">
+              <time dateTime={post?.publishedAt} className="text-sm text-right text-gray-700">
+                {format(parseISO(post?.publishedAt), 'd LLLL, yyyy')} - by {post?.authorName}
+              </time>
+            </div>
+          )}
+
+          <PortableText value={post?.body} components={ptComponents} />
+        </div>
       </article>
     </Layout>
   );
@@ -75,7 +62,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
-  "name": author->name,
+  "authorName": author->name,
   "authorImage": author->image,
   "categories": categories[]->title,
   mainImage,
@@ -95,20 +82,14 @@ export async function getStaticProps({ params }) {
 }
 
 const ptComponents = {
-  // types: {
-  //   image: ({ value }) => {
-  //     if (!value?.asset?._ref) {
-  //       return null;
-  //     }
-  //     return (
-  //       <img
-  //         alt={value.alt || ' '}
-  //         loading="lazy"
-  //         src={urlFor(value).width(320).height(240).fit('max').auto('format')}
-  //       />
-  //     );
-  //   },
-  // },
+  types: {
+    image: ({ value }) => {
+      if (!value?.asset?._ref) {
+        return null;
+      }
+      return <img alt={value.alt || ' '} loading="lazy" src={urlFor(value).url()} className="rounded" />;
+    },
+  },
 };
 
 export default PostLayout;

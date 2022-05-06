@@ -37,6 +37,7 @@ export async function getStaticProps() {
         slug
       } | order(publishedAt desc)
     `);
+
   return {
     props: {
       posts,

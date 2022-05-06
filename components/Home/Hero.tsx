@@ -11,7 +11,7 @@ export default function Hero() {
         />
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">Data to enrich your</span>{' '}
-          <span className="block text-transparent from-green-600 to-emerald-600 bg-gradient-to-r bg-clip-text xl:inline">
+          <span className="block text-transparent from-green-700 to-emerald-800 bg-gradient-to-r bg-clip-text xl:inline">
             online business
           </span>
         </h1>
@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="rounded-md shadow">
             <a
               href="#"
-              className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md from-green-600 to-emerald-600 bg-gradient-to-r hover:from-green-600 hover:to-emerald-700 md:py-4 md:text-lg md:px-10"
+              className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-md from-green-600 to-emerald-700 bg-gradient-to-r hover:from-green-700 hover:to-emerald-700 md:py-4 md:text-lg md:px-10"
             >
               Get started
             </a>

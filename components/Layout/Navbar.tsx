@@ -1,5 +1,4 @@
 import { LinkComponent } from '@/components/Link';
-import Themes from './Themes';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { classNames } from '@/utils/classNames';
 import { Fragment, useEffect } from 'react';
@@ -52,7 +51,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-10 navbar">
       <Popover className="relative bg-white">
-        <div className="flex items-center justify-between px-4 py-4 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <div className="flex items-center justify-between px-4 py-3 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <LinkComponent href="/">
               <span className="sr-only">Heuris</span>
@@ -60,7 +59,7 @@ export default function Navbar() {
             </LinkComponent>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
+            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-600">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
@@ -130,7 +129,7 @@ export default function Navbar() {
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <LinkComponent
               href="/contact"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-600 hover:to-emerald-700"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-700 bg-origin-border hover:from-green-700 hover:to-emerald-700"
             >
               Contact Us
             </LinkComponent>
