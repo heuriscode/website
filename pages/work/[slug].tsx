@@ -23,7 +23,7 @@ const PostLayout = ({ post }) => {
         {post?.mainImage && (
           <picture>
             <source srcSet={urlFor(post.mainImage).width(600).height(300).url()} media="(max-width: 600px)" />
-            <img src={urlFor(post?.mainImage).width(1600).height(350).url()} alt={''} className="my-2" />
+            <img src={urlFor(post?.mainImage).width(1600).height(350).url()} alt={''} className="my-2 rounded-sm" />
           </picture>
         )}
         <div className={`my-4 justify-center px-4`}>
