@@ -32,3 +32,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+
+# Contentlayer
+.contentlayer
+
+/heuris-be/node_modules

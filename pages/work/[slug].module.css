@@ -1,0 +1,7 @@
+.content {
+  @apply prose max-w-[800px] mx-auto;
+}
+
+.section {
+  @apply px-4 max-w-[800px] mx-auto;
+}

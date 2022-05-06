@@ -16,11 +16,20 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/*
 body {
   @apply text-primary;
+} 
+*/
+
+.navStyle {
+  @apply border-b shadow-sm;
 }
 
 .logo {
   background-size: 520px;
+}
+
+img {
+  pointer-events: none;
 }
