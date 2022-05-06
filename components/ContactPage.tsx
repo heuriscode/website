@@ -65,7 +65,7 @@ export default function Contact() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-600 focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Contact() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-600 focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                   name="company"
                   id="company"
                   autoComplete="organization"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-600 focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-emerald-600 focus:border-emerald-600"
                 />
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function Contact() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-emerald-600 focus:border-emerald-600"
                   placeholder="+61 555 987 543"
                 />
               </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500"
+                  className="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-emerald-600 focus:border-emerald-600"
                   defaultValue={''}
                 />
               </div>
@@ -143,7 +143,7 @@ export default function Contact() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
+                className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-700 to-emerald-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-600"
               >
                 Lets talk
               </button>

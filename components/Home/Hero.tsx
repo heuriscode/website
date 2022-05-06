@@ -31,7 +31,7 @@ export default function Hero() {
           <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
             <a
               href="#"
-              className="flex items-center justify-center w-full px-8 py-3 text-base font-medium bg-white border border-transparent rounded-md text-emerald-600 hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+              className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-green-800 bg-white border border-transparent rounded-md hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
             >
               Live demo
             </a>

@@ -54,7 +54,7 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="bg-gradient-to-r from-emerald-800 to-green-700">
+    <div className="bg-gradient-to-r from-emerald-800 to-green-800">
       {/* Gradient Feature Section */}
       <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
         <h2 className="text-3xl font-extrabold tracking-tight text-white">Services</h2>

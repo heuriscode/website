@@ -129,7 +129,7 @@ export default function Navbar() {
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <LinkComponent
               href="/contact"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-600 to-emerald-700 bg-origin-border hover:from-green-700 hover:to-emerald-700"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-green-700 to-emerald-700 bg-origin-border hover:from-green-700 hover:to-emerald-800"
             >
               Contact Us
             </LinkComponent>
@@ -194,7 +194,7 @@ export default function Navbar() {
                 <div className="mt-6">
                   <LinkComponent
                     href="/contact"
-                    className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-600 to-emerald-600 bg-origin-border hover:from-green-700 hover:to-emerald-700"
+                    className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-green-700 to-emerald-700 bg-origin-border hover:from-green-700 hover:to-emerald-700"
                   >
                     Contact Us
                   </LinkComponent>

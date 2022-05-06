@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import Header from '@/components/Header';
+import { Header } from '@/components/Header';
 import StaffsCard from '@/components/StaffsCard';
 import { DefaultSeo } from '@/components/SEO/SEO';
 

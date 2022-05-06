@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
             <LinkComponent
               href="/contact"
-              className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-emerald-600 to-green-600 bg-origin-border hover:from-emerald-700 hover:to-green-700"
+              className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-emerald-600 to-green-700 bg-origin-border hover:from-emerald-700 hover:to-green-700"
             >
               Contact Us
             </LinkComponent>

@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout/Layout';
-import Header from '@/components/Header';
+import { Header } from '@/components/Header';
 import Portfolio from '@/components/Portfolio';
 import { DefaultSeo } from '@/components/SEO/SEO';
 import client from '@/client';
@@ -7,8 +7,6 @@ import groq from 'groq';
 import { LinkComponent } from '@/components/Link';
 
 export default function Work({ posts }) {
-  // console.log(posts);
-
   const data = {
     name: 'Work',
     title: 'Our Projects',
@@ -30,7 +28,7 @@ export async function getStaticProps() {
         title,
         "authorName": author->name,
         "authorImage": author->image,
-        "categories": categories[]->title,
+        "categories": categories[]->,
         mainImage,
         publishedAt,
         description,
@@ -42,6 +40,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
+    revalidate: 10,
   };
 }
 
