@@ -36,19 +36,34 @@ export default function TeamsCard({ heuris, heuristechs }: TeamsCardType) {
 
                       <ul role="list" className="flex space-x-5">
                         <li>
-                          <a href={person.twitterUrl} className="text-gray-400 hover:text-emerald-500">
+                          <a
+                            href={person.twitterUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gray-400 hover:text-emerald-500"
+                          >
                             <span className="sr-only">CV</span>
                             <AiFillFile size={24} title="CV" />
                           </a>
                         </li>
                         <li>
-                          <a href={person.linkedinUrl} className="text-gray-400 hover:text-emerald-500">
+                          <a
+                            href={person.linkedinUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gray-400 hover:text-emerald-500"
+                          >
                             <span className="sr-only">LinkedIn</span>
                             <AiFillLinkedin size={24} title="LinkedIn" />
                           </a>
                         </li>
                         <li>
-                          <a href={person.linkedinUrl} className="text-gray-400 hover:text-emerald-500">
+                          <a
+                            href={person.linkedinUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-gray-400 hover:text-emerald-500"
+                          >
                             <span className="sr-only">Email</span>
                             <AiFillMail size={24} title="Email" />
                           </a>
