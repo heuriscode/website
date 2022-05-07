@@ -34,7 +34,7 @@ export const WorkPage = ({ post }) => {
             {post?.categories.map((category) => (
               <li
                 key={category.title}
-                className="px-3 py-0.5 rounded-full bg-green-800/30 text-sm text-emerald-800 hover:underline"
+                className="px-3 py-1 text-sm transition duration-200 rounded-xl bg-green-800/30 text-emerald-900 hover:bg-green-800/40"
               >
                 <LinkComponent href={`/services/${category.slug.current}`}>{category.title}</LinkComponent>
               </li>

@@ -33,7 +33,7 @@ export default function Portfolio({ work }) {
                           <LinkComponent
                             key={category.title}
                             href={`/services/${category.slug?.current}`}
-                            className="hover:underline bg-green-800/30 text-emerald-800 px-3 py-0.5 rounded-lg w-fit overflow-clip"
+                            className="hover:bg-green-800/40 transition duration-200 bg-green-800/30 text-emerald-900 px-3 py-0.5 rounded-lg w-fit overflow-clip"
                           >
                             {category.title}
                           </LinkComponent>
