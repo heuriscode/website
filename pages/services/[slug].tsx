@@ -6,18 +6,18 @@ import { DefaultSeo } from '@/components/SEO/SEO';
 import Portfolio from '@/components/Portfolio';
 
 export default function ServicesPage({ posts, services }) {
-  console.log(posts);
+  // console.log(posts);
   // console.log(services);
   const data = {
     name: 'Services',
     title: services?.title,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: 'We will need a description.',
   };
+
   return (
     <Layout>
       <DefaultSeo seoData={data} />
-      <Header name="Services" title={services?.title} description={services?.description} />
+      <Header name={data?.name} title={data?.title} description={data?.description} />
       <Portfolio work={posts} />
     </Layout>
   );
