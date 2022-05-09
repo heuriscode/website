@@ -9,6 +9,8 @@ export function DefaultSeo({ seoData }: SEOPropsType) {
       title={seoData.title}
       description={seoData.description}
       openGraph={{
+        title: seoData.title,
+        description: seoData.description,
         type: 'website',
         images: [
           {
