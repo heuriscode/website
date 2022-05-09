@@ -2,9 +2,10 @@ import Layout from '@/components/Layout/Layout';
 import { Header } from '@/components/Header';
 import StaffsCard from '@/components/StaffsCard';
 import { DefaultSeo } from '@/components/SEO/SEO';
+import { SEOPropsData } from '@/utils/types';
 
 export default function Teams() {
-  const data = {
+  const data: SEOPropsData = {
     name: 'Teams',
     title: 'Our Experts',
     description:

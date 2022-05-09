@@ -4,10 +4,10 @@ import Portfolio from '@/components/Portfolio';
 import { DefaultSeo } from '@/components/SEO/SEO';
 import client from '@/client';
 import groq from 'groq';
-import { LinkComponent } from '@/components/Link';
+import { SEOPropsData } from '@/utils/types';
 
 export default function Work({ posts }) {
-  const data = {
+  const data: SEOPropsData = {
     name: 'Work',
     title: 'Our Projects',
     description:

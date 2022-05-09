@@ -4,11 +4,12 @@ import Layout from '@/components/Layout/Layout';
 import { Header } from '@/components/Header';
 import { DefaultSeo } from '@/components/SEO/SEO';
 import Portfolio from '@/components/Portfolio';
+import { SEOPropsData } from '@/utils/types';
 
 export default function ServicesPage({ posts, services }) {
   // console.log(posts);
   // console.log(services);
-  const data = {
+  const data: SEOPropsData = {
     name: 'Services',
     title: services?.title,
     description: 'We will need a description.',

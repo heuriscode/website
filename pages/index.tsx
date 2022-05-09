@@ -5,8 +5,9 @@ import Contact from '@/components/Home/Contact';
 import Statement from '@/components/Home/Statement';
 import Cards from '@/components/Home/Cards';
 import { DefaultSeo } from '@/components/SEO/SEO';
+import { SEOPropsData } from '@/utils/types';
 
-const data = {
+const data: SEOPropsData = {
   title: 'Home',
   description:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',

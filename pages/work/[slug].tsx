@@ -1,18 +1,25 @@
 import Layout from '@/components/Layout/Layout';
 import client from '@/client';
 import groq from 'groq';
-import { DefaultSeo } from '@/components/SEO/SEO';
+import { ArticleSeo } from '@/components/SEO/SEO';
 import { WorkPage } from '@/components/Work/WorkPage';
+import { urlFor } from '@/utils/sanityImage';
+import { SEOPropsData } from '@/utils/types';
 
 const PostLayout = ({ post }) => {
-  const seoData = {
+  const seoData: SEOPropsData = {
     title: post?.title,
     description: post?.description,
+    publishedAt: post?.publishedAt,
+    updatedAt: post?.updatedAt,
+    authorName: post?.authorName,
+    coverImage: urlFor(post?.mainImage).height(630).width(1200).url() ?? null,
+    tags: post?.categories?.map((category) => category.title) ?? [],
   };
 
   return (
     <Layout>
-      <DefaultSeo seoData={seoData} />
+      <ArticleSeo seoData={seoData} />
       <WorkPage post={post} />
     </Layout>
   );
@@ -34,6 +41,7 @@ export async function getStaticProps({ params }) {
   "categories": categories[]->,
   mainImage,
   publishedAt,
+  "updatedAt": _updatedAt,
   description,
   body
 }`;

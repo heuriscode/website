@@ -2,9 +2,9 @@ import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 
-export default function Header(props) {
+export default function Header() {
   const router = useRouter();
-  const currentDomain = 'https://heuris.com.au';
+  const URL = 'https://heuris.com.au';
   return (
     <>
       <Head>
@@ -13,14 +13,10 @@ export default function Header(props) {
 
       <NextSeo
         titleTemplate="%s - Heuris"
-        description={props.description}
-        canonical={`${currentDomain}${router.asPath == '/index' ? '' : router.asPath}`}
+        canonical={`${URL}${router.asPath}`}
         openGraph={{
-          url: `${currentDomain}${router.asPath == '/index' ? '' : router.asPath}`,
-          type: 'website',
+          url: `${URL}${router.asPath}`,
           locale: 'au',
-          title: `${props.title}`,
-          description: `${props.description}`,
           site_name: 'Heuris',
         }}
         twitter={{
