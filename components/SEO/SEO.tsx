@@ -1,7 +1,6 @@
 import { NextSeo, BreadcrumbJsonLd } from 'next-seo';
 import { SEOPropsType } from '@/utils/types';
-
-const URL = 'https://heuris.com.au';
+import { URL } from '@/utils/constants';
 
 export function DefaultSeo({ seoData }: SEOPropsType) {
   return (

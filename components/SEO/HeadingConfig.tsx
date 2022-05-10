@@ -1,10 +1,9 @@
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
-
+import { URL } from '@/utils/constants';
 export default function HeadingConfig() {
   const router = useRouter();
-  const URL = 'https://heuris.com.au';
   return (
     <>
       <Head>
