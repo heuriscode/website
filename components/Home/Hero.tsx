@@ -10,14 +10,13 @@ export default function Hero() {
           className="relative px-4 pb-2 mx-auto sm:px-6 lg:px-8"
         />
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-          <span className="block xl:inline">Data to enrich your</span>{' '}
+          <span className="block xl:inline">Economic analysis and tech-driven innovation for</span>{' '}
           <span className="block text-transparent from-green-700 to-emerald-800 bg-gradient-to-r bg-clip-text xl:inline">
-            online business
+            agro-food supply chain issues and rural development
           </span>
         </h1>
         <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-          fugiat veniam occaecat fugiat aliqua.
+          Heuris applies advanced economic concepts and analysis to generate deep insights and novel innovations supporting inclusivity and sustainability in agro-food supply chains.
         </p>
         <div className="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
           <div className="rounded-md shadow">
