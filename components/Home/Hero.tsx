@@ -11,8 +11,17 @@ export default function Hero() {
         />
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">Economic analysis and tech-driven innovation for</span>{' '}
+          <br>
           <span className="block text-transparent from-green-700 to-emerald-800 bg-gradient-to-r bg-clip-text xl:inline">
-            agro-food supply chain issues and rural development
+            Agro-food supply chain inclusivity and sustainability
+          </span>
+          <br>
+          <span className="block text-transparent from-green-700 to-emerald-800 bg-gradient-to-r bg-clip-text xl:inline">
+            Inclusive rural development
+          </span>
+          <br>
+          <span className="block text-transparent from-green-700 to-emerald-800 bg-gradient-to-r bg-clip-text xl:inline">
+            Sustainability, ethical, and product quality assurance innovations and governance for agro-food systems
           </span>
         </h1>
         <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
