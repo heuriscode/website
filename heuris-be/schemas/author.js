@@ -26,6 +26,25 @@ export default {
       },
     },
     {
+      title: 'LinkedIn URL',
+      name: 'linkedin',
+      type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https'],
+        }),
+    },
+    {
+      title: 'Email',
+      name: 'email',
+      type: 'string',
+    },
+    {
+      title: 'CV',
+      name: 'cv',
+      type: 'file',
+    },
+    {
       name: 'bio',
       title: 'Bio',
       type: 'array',
@@ -33,7 +52,7 @@ export default {
         {
           title: 'Block',
           type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
+          styles: [{ title: 'Normal', value: 'normal' }],
           lists: [],
         },
       ],
@@ -45,4 +64,4 @@ export default {
       media: 'image',
     },
   },
-}
+};
