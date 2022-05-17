@@ -26,6 +26,7 @@ export async function getStaticProps() {
   const posts = await client.fetch(groq`
       *[_type == "post" && publishedAt < now()]{ 
         title,
+        shortTitle,
         "authorName": author->name,
         "authorImage": author->image,
         "categories": categories[]->,

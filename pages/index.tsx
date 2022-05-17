@@ -15,11 +15,11 @@ const data: SEOPropsData = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
-export default function Home() {
+export default function Home({ serviceSlug }) {
   return (
     <Layout>
       <DefaultSeo seoData={data} />
-      <HeroPage />
+      <HeroPage services={serviceSlug} />
       <Statement />
       <Cards />
       <Services />
@@ -28,27 +28,27 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   const postQuery = groq`*[count((categories[]->slug.current)[@ in [$slug]]) > 0]{
-//         title,
-//         mainImage,
-//         publishedAt,
-//         description,
-//         slug
-//       } | order(publishedAt desc)`;
+export async function getStaticProps() {
+  const postQuery = groq`*[count((categories[]->slug.current)[@ in [$slug]]) > 0]{
+        title,
+        mainImage,
+        publishedAt,
+        description,
+        slug
+      } | order(publishedAt desc)`;
 
-//   // Need different slug params for each service tag
-//   const slug1 = '';
-//   const slug2 = '';
-//   const slug3 = '';
+  // Need different slug params for each service tag
+  // const slug1 = '';
+  // const slug2 = '';
+  // const slug3 = '';
 
-//   const service1 = await client.fetch(postQuery, { slug1 });
-//   const service2 = await client.fetch(postQuery, { slug2 });
-//   return {
-//     props: {
-//       service1,
-//       service2,
-//     },
-//     revalidate: 10,
-//   };
-// }
+  const serviceSlug = await client.fetch(groq`*[_type == "category" && defined(slug.current)]`);
+  // const service2 = await client.fetch(postQuery, { slug2 });
+  return {
+    props: {
+      serviceSlug,
+      // service2,
+    },
+    revalidate: 10,
+  };
+}

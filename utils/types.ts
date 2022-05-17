@@ -19,6 +19,7 @@ export interface SEOPropsType {
 export interface SEOPropsData {
   name?: string;
   title: string;
+  shortTitle?: string;
   description: string;
   publishedAt?: string;
   updatedAt?: string;
