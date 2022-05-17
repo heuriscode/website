@@ -1,15 +1,14 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './layouts/**/*.{js,ts,jsx,tsx}'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     darkMode: 'class',
-    // fontFamily: {
-    //   sans: 'nowbold, Helvetica, Arial, sans-serif',
-    // },
+    fontFamily: {
+      sans: 'Cambria, Georgia ,serif',
+    },
     extend: {
       colors: {
-        'qh-red': '#b9131a',
         primary: '#7CB340',
         secondary: '#29ABE2',
       },

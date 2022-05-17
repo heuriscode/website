@@ -27,13 +27,13 @@ export default function Portfolio({ work }) {
                     <p className="mt-3 text-base text-gray-500 line-clamp-2 overflow-ellipsis">{post.description}</p>
                   </a>
                   {post.categories && (
-                    <div className="flex flex-row gap-2 mt-4 overflow-x-auto text-sm">
+                    <div className="flex flex-col gap-2 mt-4 overflow-x-auto text-sm">
                       <>
                         {post.categories?.map((category) => (
                           <LinkComponent
                             key={category.title}
                             href={`/services/${category.slug?.current}`}
-                            className="hover:bg-green-800/40 transition duration-200 bg-green-800/30 text-emerald-900 px-3 py-0.5 rounded-lg w-fit overflow-clip"
+                            className="px-3 py-1 transition duration-200 rounded-lg hover:bg-green-800/40 bg-green-800/30 text-emerald-900 w-fit overflow-clip"
                           >
                             {category.title}
                           </LinkComponent>
