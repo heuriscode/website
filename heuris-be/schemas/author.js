@@ -26,6 +26,24 @@ export default {
       },
     },
     {
+      title: 'Team',
+      name: 'team',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        list: [
+          { title: 'Heuris', value: 'heuris' },
+          { title: 'Heuristech', value: 'heuristech' },
+        ],
+        layout: 'radio',
+      },
+    },
+    {
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+    },
+    {
       title: 'LinkedIn URL',
       name: 'linkedin',
       type: 'url',
@@ -45,8 +63,8 @@ export default {
       type: 'file',
     },
     {
-      name: 'bio',
       title: 'Bio',
+      name: 'bio',
       type: 'array',
       of: [
         {
