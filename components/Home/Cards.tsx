@@ -43,7 +43,7 @@ export default function Cards() {
                   spaceBetween={30}
                   centeredSlides={true}
                   autoplay={{
-                    delay: 6000,
+                    delay: 7000,
                     disableOnInteraction: false,
                   }}
                   modules={[Autoplay]}
@@ -171,43 +171,13 @@ export default function Cards() {
             </div>
             <div className="hidden mt-12 sm:mt-16 lg:mt-0 sm:block">
               <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0">
-                <Swiper
-                  spaceBetween={30}
-                  centeredSlides={true}
-                  autoplay={{
-                    delay: 6000,
-                    disableOnInteraction: false,
-                  }}
-                  modules={[Autoplay]}
-                  className="w-full shadow-lg rounded-xl lg:w-auto lg:h-full"
-                >
-                  <SwiperSlide>
-                    <img
-                      src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
-                      alt="Customer profile user interface"
-                      className="lg:max-w-3xl"
-                    />
-                    <LinkComponent
-                      href="#"
-                      className="absolute w-full px-6 py-3 text-white bottom-5 from-green-700 to-green-800 bg-gradient-to-l"
-                    >
-                      Link title
-                    </LinkComponent>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img
-                      src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
-                      alt="Customer profile user interface"
-                      className="lg:max-w-3xl"
-                    />
-                    <LinkComponent
-                      href="#"
-                      className="absolute w-full px-6 py-3 text-white bottom-5 from-green-700 to-green-800 bg-gradient-to-l"
-                    >
-                      Link title Link title Link title Link title Link title Link title Link title Link title Link title
-                    </LinkComponent>
-                  </SwiperSlide>
-                </Swiper>
+                <div className="w-full shadow-lg rounded-xl lg:w-auto lg:h-full">
+                  <img
+                    src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
+                    alt="Customer profile user interface"
+                    className="lg:max-w-3xl rounded-xl"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function Statement() {
   return (
     <div className="relative py-16 bg-white sm:py-24">
@@ -28,29 +29,14 @@ export default function Statement() {
             </svg>
           </div>
           <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
-            {/* Testimonial card*/}
-            <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
-              <img
-                className="absolute inset-0 object-cover w-full h-full"
-                src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
-                alt=""
+            <div className="absolute shadow-xl rounded-2xl">
+              <Image
+                height={1000}
+                width={1260}
+                className="rounded-2xl"
+                src="/crowdy_three.jpeg"
+                alt="Crowdy Three Supply Chain Issues"
               />
-              {/* <div className="absolute inset-0 bg-emerald-500 mix-blend-multiply" /> */}
-              <div className="absolute inset-0 bg-gradient-to-t from-emerald-700 via-emerald-500 opacity-90" />
-              <div className="relative px-8">
-                <blockquote className="mt-8">
-                  <div className="relative text-lg font-medium text-white md:flex-grow">
-                    <p className="relative">
-                      Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                      Montes, magna cursus nulla feugiat dignissim id lobortis amet.
-                    </p>
-                  </div>
-
-                  <footer className="mt-4">
-                    <p className="text-base font-semibold text-emerald-100">Sarah Williams, CEO at Workcation</p>
-                  </footer>
-                </blockquote>
-              </div>
             </div>
           </div>
         </div>
@@ -62,13 +48,18 @@ export default function Statement() {
               Knowledge and theory underpinned by a creative mindset
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
+              {/* <p className="text-base leading-7">BLAH</p> */}
               <p className="text-lg">
-                We use advanced economic methods including econometric analysis and policy review underpinned by an
-                extensive and deep economic conceptual knowledge and a focus on creative viewpoints/solutions to provide
-                unique insights to your individual problems.
+                Heuris applies advanced economic concepts and analysis to generate deep insights and novel innovations
+                supporting inclusivity and sustainability in agro-food supply chains. Heuris originated from a concern
+                that the major gap between research and impact objectives was increasingly failing to translate to
+                social impacts in an efficient, or even effective, way.
               </p>
-              <p className="text-base leading-7">BLAH</p>
-              <p className="text-base leading-7">BLAH</p>
+              <p className="text-lg">
+                Our objective is to bridge this gap: to provide leading economic analysis/insights and to apply those to
+                innovations that support inclusive and sustainable changes to agro-food supply systems and natural
+                resource management problems.
+              </p>{' '}
             </div>
           </div>
         </div>

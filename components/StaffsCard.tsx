@@ -40,7 +40,7 @@ export default function TeamsCard({ heuris, heuristechs }: TeamsCardType) {
                             href={person.twitterUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-emerald-500"
+                            className="text-gray-400 hover:text-green-800"
                           >
                             <span className="sr-only">CV</span>
                             <AiFillFile size={24} title="CV" />
@@ -51,7 +51,7 @@ export default function TeamsCard({ heuris, heuristechs }: TeamsCardType) {
                             href={person.linkedinUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-emerald-500"
+                            className="text-gray-400 hover:text-green-800"
                           >
                             <span className="sr-only">LinkedIn</span>
                             <AiFillLinkedin size={24} title="LinkedIn" />
@@ -62,7 +62,7 @@ export default function TeamsCard({ heuris, heuristechs }: TeamsCardType) {
                             href={person.linkedinUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-emerald-500"
+                            className="text-gray-400 hover:text-green-800"
                           >
                             <span className="sr-only">Email</span>
                             <AiFillMail size={24} title="Email" />
