@@ -9,7 +9,7 @@ export default {
       type: 'string',
     },
     {
-      name: 'short_title',
+      name: 'shortTitle',
       title: 'Short title',
       type: 'string',
       validation: (Rule) => Rule.max(75).warning(`A short title shouldn't be more than 75 characters.`),
@@ -25,7 +25,7 @@ export default {
       title: 'Slug',
       type: 'slug',
       options: {
-        source: 'short_title',
+        source: 'shortTitle',
         maxLength: 96,
       },
     },
