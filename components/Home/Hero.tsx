@@ -69,7 +69,7 @@ export default function Hero({ services }) {
             },
           }}
           autoplay={{
-            delay: 6000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
@@ -78,7 +78,7 @@ export default function Hero({ services }) {
           {services?.map((service) => (
             <SwiperSlide
               key={service._id}
-              className="flex items-center justify-center px-3 py-3 text-white rounded bg-gradient-to-br from-green-700 to-green-800 bg-origin-border hover:from-green-800 hover:to-green-800"
+              className="flex items-center justify-center px-3 py-3 text-white bg-green-700 rounded hover:bg-green-800"
             >
               <LinkComponent href={`/services/${service.slug.current}`}>{service.title}</LinkComponent>
             </SwiperSlide>

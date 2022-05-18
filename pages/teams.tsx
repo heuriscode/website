@@ -7,8 +7,8 @@ import client from '@/client';
 import groq from 'groq';
 
 export default function Teams({ heuris, heuristech }) {
-  console.log(heuris);
-  console.log(heuristech);
+  // console.log(heuris);
+  // console.log(heuristech);
 
   const data: SEOPropsData = {
     name: 'Teams',
@@ -20,7 +20,7 @@ export default function Teams({ heuris, heuristech }) {
     <Layout>
       <DefaultSeo seoData={data} />
       <Header name={data.name} title={data.title} description={data.description} />
-      <StaffsCard heuris={people.heuris} heuristechs={people.heuristechs} />
+      <StaffsCard heuris={heuris} heuristech={heuristech} />
     </Layout>
   );
 }
@@ -55,7 +55,7 @@ const people = {
       role: 'Co-Founder / CEO',
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna.',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -64,7 +64,7 @@ const people = {
       role: 'Co-Founder / CEO',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna.',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -75,7 +75,7 @@ const people = {
       role: 'Co-Founder / CEO',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna.',
       twitterUrl: '#',
       linkedinUrl: '#',
     },
@@ -84,7 +84,7 @@ const people = {
       role: 'Co-Founder / CEO',
       imageUrl:
         'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+      bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna.',
       twitterUrl: '#',
       linkedinUrl: '#',
     },

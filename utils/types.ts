@@ -1,15 +1,18 @@
 export interface TeamsCardType {
   heuris?: TeamsCardData[];
-  heuristechs?: TeamsCardData[];
+  heuristech?: TeamsCardData[];
 }
 
 export interface TeamsCardData {
   name: string;
   role: string;
-  imageUrl: string;
-  bio: string;
+  image?: string;
+  bio?: string;
   twitterUrl: string;
-  linkedinUrl: string;
+  linkedin?: string;
+  cv?: string;
+  email?: string;
+  slug?: { _type: string; current: string };
 }
 
 export interface SEOPropsType {

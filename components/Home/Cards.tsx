@@ -169,13 +169,13 @@ export default function Cards() {
                 </div>
               </div>
             </div>
-            <div className="hidden mt-12 sm:mt-16 lg:mt-0 sm:block">
-              <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0">
+            <div className="mt-12 sm:mt-16 lg:mt-0">
+              <div className="px-4 sm:px-6 lg:px-0">
                 <div className="w-full shadow-lg rounded-xl lg:w-auto lg:h-full">
                   <img
-                    src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg"
-                    alt="Customer profile user interface"
-                    className="lg:max-w-3xl rounded-xl"
+                    src="/waterfall_work.webp"
+                    alt="Randy Adam Dan and Njoke waterfall work"
+                    className="lg:max-w-[700px] rounded-xl"
                   />
                 </div>
               </div>
