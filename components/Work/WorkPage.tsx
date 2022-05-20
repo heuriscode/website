@@ -16,12 +16,12 @@ export const WorkPage = ({ post }) => {
       )}
       <div className={`my-4 justify-center px-4`}>
         {/* Breadcrumb */}
-        <div className="flex items-center justify-center gap-1 mb-4 text-xs text-gray-500">
+        <div className="flex items-center justify-center gap-1 mb-4 text-sm text-gray-500">
           <LinkComponent href={'/work'} className="text-gray-500 hover:underline hover:text-green-800">
             Work
           </LinkComponent>
           <FiChevronRight />
-          <div>{post?.title}</div>
+          <div>{post?.shortTitle || post?.title}</div>
         </div>
       </div>
       <div className="max-w-5xl px-4 pt-4 pb-8 mx-auto prose text-center sm:prose-h1:text-4xl prose-h1:text-2xl">

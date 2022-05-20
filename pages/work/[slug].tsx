@@ -7,6 +7,8 @@ import { urlFor } from '@/utils/sanityImage';
 import { SEOPropsData } from '@/utils/types';
 
 const PostLayout = ({ post }) => {
+  console.log(post);
+
   const seoData: SEOPropsData = {
     title: post?.title,
     description: post?.description,
@@ -36,6 +38,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
+  shortTitle,
   "authorName": author->name,
   "authorImage": author->image,
   "categories": categories[]->,

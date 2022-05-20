@@ -1,14 +1,18 @@
-export interface TeamsCardType {
-  heuris?: TeamsCardData[];
-  heuristech?: TeamsCardData[];
+export interface TeamsCardProps {
+  heuris?: TeamsData[];
+  heuristech?: TeamsData[];
 }
 
-export interface TeamsCardData {
+export interface TeamPageProps {
+  team: TeamsData;
+}
+
+export interface TeamsData {
   name: string;
   role: string;
   image?: string;
-  bio?: string;
-  twitterUrl: string;
+  bio?: [];
+  twitterUrl?: string;
   linkedin?: string;
   cv?: string;
   email?: string;
@@ -19,8 +23,11 @@ export interface SEOPropsType {
   seoData: SEOPropsData;
 }
 
-export interface SEOPropsData {
+export interface SEOPropsData extends PostProps {
   name?: string;
+}
+
+export interface PostProps {
   title: string;
   shortTitle?: string;
   description?: string;
@@ -28,5 +35,7 @@ export interface SEOPropsData {
   updatedAt?: string;
   authorName?: string;
   coverImage?: string;
+  // authorImage?: string;
+  // mainImage?: string;
   tags?: string[];
 }

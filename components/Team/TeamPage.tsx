@@ -2,8 +2,10 @@ import { PortableText } from '@portabletext/react';
 import { urlFor } from '@/utils/sanityImage';
 import { LinkComponent } from '@/components/Link';
 import { AiFillMail, AiFillFile, AiFillLinkedin } from 'react-icons/ai';
+import { FiChevronRight } from 'react-icons/fi';
+import { TeamPageProps } from '@/utils/types';
 
-export const TeamPage = ({ team }) => {
+export const TeamPage = ({ team }: TeamPageProps) => {
   return (
     <div className="container grid-cols-12 gap-8 px-4 sm:py-6 sm:grid">
       <div className="col-span-4">
@@ -42,7 +44,14 @@ export const TeamPage = ({ team }) => {
       </div>
 
       <div className="col-span-8 mx-auto">
-        <div className="max-w-3xl prose">
+        <div className="max-w-3xl prose ">
+          <div className="flex items-center gap-1 text-sm text-gray-500">
+            <LinkComponent href={'/teams'} className="text-gray-500 no-underline hover:underline hover:text-green-800">
+              Our Team
+            </LinkComponent>
+            <FiChevronRight />
+            <div>{team?.name}</div>
+          </div>
           <PortableText value={team?.bio} components={ptComponents} />
         </div>
       </div>
