@@ -1,9 +1,9 @@
 import { AiFillMail, AiFillFile, AiFillLinkedin } from 'react-icons/ai';
-import { TeamsCardType } from '@/utils/types';
+import { TeamsCardProps } from '@/utils/types';
 import { LinkComponent } from './Link';
 import { urlFor } from '@/utils/sanityImage';
 
-export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
+export default function TeamsCard({ heuris, heuristech }: TeamsCardProps) {
   console.log(heuris);
 
   return (
