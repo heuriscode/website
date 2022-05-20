@@ -36,10 +36,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                       </div>
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3>
-                          <LinkComponent href={`/team/${person.slug.current}`}>{person.name}</LinkComponent>
+                          <LinkComponent href={`/teams/${person.slug.current}`}>{person.name}</LinkComponent>
                         </h3>
                         <p className="text-green-800">
-                          <LinkComponent href={`/team/${person.slug.current}`}>{person.role} </LinkComponent>
+                          <LinkComponent href={`/teams/${person.slug.current}`}>{person.role} </LinkComponent>
                         </p>
                       </div>
                       <div className="text-lg">
@@ -52,10 +52,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={person.cv}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">CV</span>
-                            <AiFillFile size={24} title="CV" />
+                            <AiFillFile size={22} title="CV" />
                           </a>
                         </li>
                         <li>
@@ -63,10 +63,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={person.linkedin}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">LinkedIn</span>
-                            <AiFillLinkedin size={24} title="LinkedIn" />
+                            <AiFillLinkedin size={22} title="LinkedIn" />
                           </a>
                         </li>
                         <li>
@@ -74,10 +74,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={`mailto:${person.email}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">Email</span>
-                            <AiFillMail size={24} title="Email" />
+                            <AiFillMail size={22} title={person.email} />
                           </a>
                         </li>
                       </ul>
@@ -118,10 +118,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                       </div>
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3>
-                          <LinkComponent href={`/team/${person.slug.current}`}>{person.name}</LinkComponent>
+                          <LinkComponent href={`/teams/${person.slug.current}`}>{person.name}</LinkComponent>
                         </h3>
                         <p className="text-green-800">
-                          <LinkComponent href={`/team/${person.slug.current}`}>{person.role} </LinkComponent>
+                          <LinkComponent href={`/teams/${person.slug.current}`}>{person.role} </LinkComponent>
                         </p>
                       </div>
                       <div className="text-lg">
@@ -134,10 +134,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={person.cv}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">CV</span>
-                            <AiFillFile size={24} title="CV" />
+                            <AiFillFile size={22} title="CV" />
                           </a>
                         </li>
                         <li>
@@ -145,10 +145,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={person.linkedin}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">LinkedIn</span>
-                            <AiFillLinkedin size={24} title="LinkedIn" />
+                            <AiFillLinkedin size={22} title="LinkedIn" />
                           </a>
                         </li>
                         <li>
@@ -156,10 +156,10 @@ export default function TeamsCard({ heuris, heuristech }: TeamsCardType) {
                             href={`mailto:${person.email}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-green-800"
+                            className="text-gray-500 hover:text-green-800"
                           >
                             <span className="sr-only">Email</span>
-                            <AiFillMail size={24} title="Email" />
+                            <AiFillMail size={22} title={person.email} />
                           </a>
                         </li>
                       </ul>

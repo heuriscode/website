@@ -7,8 +7,6 @@ import Portfolio from '@/components/Portfolio';
 import { SEOPropsData } from '@/utils/types';
 
 export default function ServicesPage({ posts, services }) {
-  // console.log(posts);
-  // console.log(services);
   const data: SEOPropsData = {
     name: 'Services',
     title: services?.title,

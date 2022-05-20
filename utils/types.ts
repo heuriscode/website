@@ -23,7 +23,7 @@ export interface SEOPropsData {
   name?: string;
   title: string;
   shortTitle?: string;
-  description: string;
+  description?: string;
   publishedAt?: string;
   updatedAt?: string;
   authorName?: string;

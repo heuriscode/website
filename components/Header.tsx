@@ -1,7 +1,7 @@
 interface HeaderProps {
-  name: string;
-  title: string;
-  description: string;
+  name?: string;
+  title?: string;
+  description?: string;
 }
 
 export function Header({ name, title, description }: HeaderProps) {
@@ -13,7 +13,7 @@ export function Header({ name, title, description }: HeaderProps) {
           <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
             {title}
           </p>
-          <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">{description}</p>
+          {description && <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">{description}</p>}
         </div>
       </div>
     </div>
