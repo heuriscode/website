@@ -61,6 +61,13 @@ function MobileNavigation() {
                 className="absolute inset-x-0 p-6 mt-4 space-y-4 text-lg tracking-tight origin-top bg-white shadow-xl top-full rounded-2xl text-slate-900 ring-1 ring-slate-900/5"
               >
                 <li>
+                  <Link href="#about">
+                    <a className="block w-full" onClick={() => close()}>
+                      About Us
+                    </a>
+                  </Link>
+                </li>
+                <li>
                   <Link href="#services">
                     <a className="block w-full" onClick={() => close()}>
                       Services

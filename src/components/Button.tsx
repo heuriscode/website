@@ -12,7 +12,7 @@ const variantStyles = {
     charcoal:
       'bg-charcoal-700 text-white hover:bg-charcoal-900 active:bg-charcoal-800 active:text-charcoal-300 focus-visible:outline-charcoal-900',
     primary:
-      'bg-primary text-white hover:text-charcoal-100 hover:bg-primary active:bg-primary active:text-primary focus-visible:outline-primary',
+      'bg-primary text-white hover:bg-primary hover:bg-primary-600 active:bg-primary active:text-primary focus-visible:outline-primary',
     white:
       'bg-white text-charcoal-900 hover:bg-primary-50 active:bg-primary-200 active:text-charcoal-600 focus-visible:outline-white',
   },

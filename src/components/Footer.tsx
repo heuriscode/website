@@ -12,6 +12,13 @@ export function Footer() {
           <nav className="mt-10 text-sm" aria-label="quick links">
             <ul className="flex justify-center -my-1 space-x-6">
               <li>
+                <Link href="#about">
+                  <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
+                    About us
+                  </a>
+                </Link>
+              </li>
+              <li>
                 <Link href="#services">
                   <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                     Services

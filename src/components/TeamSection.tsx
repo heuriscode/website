@@ -36,7 +36,7 @@ export function TeamSection() {
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           <div className="space-y-5 sm:space-y-4">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Our Team</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight font-display sm:text-4xl">Our Team</h2>
             <p className="text-xl text-gray-500">
               Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
               vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
@@ -59,7 +59,7 @@ export function TeamSection() {
                       />
                     </div>
                     <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3 className="">{person.name}</h3>
+                      <h3 className="font-display">{person.name}</h3>
                       <p className="text-primary-600">{person.role}</p>
                     </div>
                     <div className="text-lg">
