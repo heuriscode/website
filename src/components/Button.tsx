@@ -9,26 +9,26 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
-    slate:
-      'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
+    charcoal:
+      'bg-charcoal-700 text-white hover:bg-charcoal-900 active:bg-charcoal-800 active:text-charcoal-300 focus-visible:outline-charcoal-900',
     primary:
-      'bg-primary text-white hover:text-slate-100 hover:bg-primary active:bg-primary active:text-primary focus-visible:outline-primary',
+      'bg-primary text-white hover:text-charcoal-100 hover:bg-primary active:bg-primary active:text-primary focus-visible:outline-primary',
     white:
-      'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+      'bg-white text-charcoal-900 hover:bg-primary-50 active:bg-primary-200 active:text-charcoal-600 focus-visible:outline-white',
   },
   outline: {
-    slate:
-      'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
+    charcoal:
+      'ring-charcoal-200 text-charcoal-700 hover:text-charcoal-900 hover:ring-charcoal-300 hover:bg-gray-50 active:bg-charcoal-100 active:text-charcoal-600 focus-visible:outline-charcoal-600 focus-visible:ring-charcoal-300',
     white:
-      'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
+      'ring-charcoal-700 text-white hover:ring-charcoal-500 active:ring-charcoal-700 active:text-charcoal-400 focus-visible:outline-white',
   },
 };
 
-export function Button({ variant = 'solid', color = 'slate', className = '', ...props }) {
+export function Button({ variant = 'solid', color = 'charcoal', className = '', ...props }) {
   return <button className={clsx(baseStyles[variant], variantStyles[variant][color], className)} {...props} />;
 }
 
-export function ButtonLink({ variant = 'solid', color = 'slate', href, className = '', ...props }) {
+export function ButtonLink({ variant = 'solid', color = 'charcoal', href, className = '', ...props }) {
   return (
     <Link href={href}>
       <a className={clsx(baseStyles[variant], variantStyles[variant][color], className)} {...props} />

@@ -23,7 +23,7 @@ export function Hero() {
       <div className="flex justify-center mt-10 space-x-6">
         <ButtonLink href="/contact">Contact us today</ButtonLink>
         <ButtonLink href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant="outline">
-          <svg aria-hidden="true" className="flex-none w-3 h-3 fill-blue-600 group-active:fill-current">
+          <svg aria-hidden="true" className="flex-none w-3 h-3 fill-charcoal-600 group-active:fill-current">
             <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
           </svg>
           <span className="ml-3">Watch video</span>

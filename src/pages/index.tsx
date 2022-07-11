@@ -7,10 +7,11 @@ import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 // import { Pricing } from '@/components/Pricing';
 import { PrimaryFeatures } from '@/components/PrimaryFeatures';
-// import { SecondaryFeatures } from '@/components/SecondaryFeatures';
+import { SecondaryFeatures } from '@/components/SecondaryFeatures';
 // import { Testimonials } from '@/components/Testimonials';
 import { BlogSection } from '@/components/BlogSection';
-import { TeamSection } from '@/components/Team';
+import { TeamSection } from '@/components/TeamSection';
+import { AboutUsSection } from '@/components/AboutUs';
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <AboutUsSection />
         <PrimaryFeatures />
+        <SecondaryFeatures />
         <TeamSection />
         <BlogSection />
       </main>
