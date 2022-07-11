@@ -1,0 +1,21 @@
+/** @type {import('prettier').Config} */
+module.exports = {
+  singleQuote: true,
+  semi: true,
+  arrowParens: 'avoid',
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
+  jsxBracketSameLine: false,
+  jsxSingleQuote: false,
+  printWidth: 120,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  requirePragma: false,
+  tabWidth: 2,
+  trailingComma: 'es5',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+  plugins: [require('prettier-plugin-tailwindcss')],
+}
