@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 export function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return clsx(...classes);
 }

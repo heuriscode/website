@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32">
       <h1 className="max-w-4xl mx-auto text-5xl font-medium tracking-tight font-display text-primary sm:text-7xl">
-        Embracing
+        <span>Embracing </span>
         <span className="font-handwritten text-primary-500">Complexity</span>
       </h1>
       <p className="max-w-2xl mx-auto mt-6 text-lg tracking-tight text-slate-700">

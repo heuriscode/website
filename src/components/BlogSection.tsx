@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { classNames } from '@/utils/classNames';
+import clsx from 'clsx';
 
 const posts = [
   {
@@ -72,7 +72,7 @@ export function BlogSection() {
               <div>
                 <a href={post.category.href} className="inline-block">
                   <span
-                    className={classNames(
+                    className={clsx(
                       post.category.color,
                       'inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium'
                     )}

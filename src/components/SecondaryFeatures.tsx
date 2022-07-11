@@ -1,199 +1,103 @@
-import { useId } from 'react';
-import Image from 'next/image';
-import { Tab } from '@headlessui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faChartMixed,
+  faChartNetwork,
+  faChartWaterfall,
+  faEarthAsia,
+  faFaceRelieved,
+  faMoneyBillWheat,
+  faValueAbsolute,
+} from '@fortawesome/pro-solid-svg-icons';
 import clsx from 'clsx';
 
 import { Container } from '@/components/Container';
-import screenshotContacts from '@/images/screenshots/contacts.png';
-import screenshotInventory from '@/images/screenshots/inventory.png';
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png';
+import { ButtonLink } from './Button';
 
 const features = [
   {
     name: 'Behavioural analysis',
-    summary:
-      'Covers a large area of study crossing multiple disciplines including social studies, economics, and psychology.',
     description:
       'The analysis of behaviour change has important implications for program evaluation and intervention design. Understanding behavioural biases and control points in decision making can better inform how you design, adapt, and target interventions and improve predictions around eventual behaviour.',
-    image: screenshotProfitLoss,
-    icon: function ReportingIcon() {
-      let id = useId();
-      return (
-        <>
-          <defs>
-            <linearGradient id={id} x1="11.5" y1={18} x2={36} y2="15.5" gradientUnits="userSpaceOnUse">
-              <stop offset=".194" stopColor="#fff" />
-              <stop offset={1} stopColor="#6692F1" />
-            </linearGradient>
-          </defs>
-          <path
-            d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5"
-            stroke={`url(#${id})`}
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </>
-      );
-    },
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faChartNetwork} {...props} />,
   },
   {
     name: 'Productivity analysis',
-    summary:
-      'Productivity analysis helps you understand how efficient you are in converting inputs influence your outputs and can decompose this efficiency to understand what changes can be made to improve efficiency.',
     description:
       'Productivity analysis helps you understand how efficient you are in converting inputs influence your outputs and can decompose this efficiency to understand what changes can be made to improve efficiency.',
-    image: screenshotInventory,
-    icon: function InventoryIcon() {
-      return (
-        <>
-          <path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff" />
-          <path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff" />
-          <path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff" />
-        </>
-      );
-    },
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faChartMixed} {...props} />,
   },
   {
     name: 'Impact evaluation design',
-    summary: 'Understand the impacts produced by an intervention or program, whether these be positive or negative.',
     description:
       'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
-    image: screenshotContacts,
-    icon: function ContactsIcon() {
-      return (
-        <>
-          <path
-            opacity=".5"
-            d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
-            fill="#fff"
-          />
-          <path
-            d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
-            fill="#fff"
-          />
-        </>
-      );
-    },
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faValueAbsolute} {...props} />,
+  },
+  {
+    name: 'Water & natural resource policy',
+    description:
+      'At Heuris we are leading experts in water and natural resource economics policy. We have extensive knowledge and experience of investment appraisal process, water allocation planning, and water and natural capital markets',
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faChartWaterfall} {...props} />,
+  },
+  {
+    name: 'Natural capital & ecosystem services',
+    description:
+      'Natural capital is the stock natural ecosystems such as soil, water, air, plants, and animals that in combination provide a range of benefits. These benefits, or ecosystem services, go beyond the provision of materials such as timber and include regulation, cultural and supporting services in which humans derive benefits from.',
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faEarthAsia} {...props} />,
+  },
+  {
+    name: 'Agri-food supply chain policy ',
+    description:
+      'Linked processes in the agricultural production of food, involving all stages of production, processing, trading, distribution, and consumption. These supply chains are responsible for providing essential products and underpin value-creation in agro-food industries.',
+    ctaLink: '#',
+    icon: props => <FontAwesomeIcon icon={faMoneyBillWheat} {...props} />,
   },
 ];
 
-function Feature({ feature, isActive, className, ...props }) {
+function Feature({ feature, className = '', ...props }) {
   return (
-    <div className={clsx(className, { 'opacity-75 hover:opacity-100': !isActive })} {...props}>
-      <div
-        className={clsx('w-9 rounded-lg', {
-          'bg-blue-600': isActive,
-          'bg-slate-500': !isActive,
-        })}
-      >
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
-          <feature.icon />
-        </svg>
-      </div>
-      <h3
-        className={clsx('mt-6 text-sm font-medium', {
-          'text-blue-600': isActive,
-          'text-slate-600': !isActive,
-        })}
-      >
-        {feature.name}
-      </h3>
-      <p className="mt-2 text-xl font-display text-slate-900">{feature.summary}</p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
-    </div>
-  );
-}
-
-function FeaturesMobile() {
-  return (
-    <div className="px-4 mt-20 -mx-4 space-y-10 overflow-hidden sm:-mx-6 sm:px-6 lg:hidden">
-      {features.map(feature => (
-        <div key={feature.name}>
-          <Feature feature={feature} className="max-w-2xl mx-auto" isActive />
-          <div className="relative pb-10 mt-10">
-            <div className="absolute bottom-0 -inset-x-4 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto aspect-[844/428] w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image src={feature.image} alt="" layout="fill" sizes="52.75rem" />
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function FeaturesDesktop() {
-  return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
-      {({ selectedIndex }) => (
-        <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
-            {features.map((feature, featureIndex) => (
-              <Feature
-                key={feature.name}
-                feature={{
-                  ...feature,
-                  name: (
-                    <Tab className="[&:not(:focus-visible)]:focus:outline-none">
-                      <span className="absolute inset-0" />
-                      {feature.name}
-                    </Tab>
-                  ),
-                }}
-                isActive={featureIndex === selectedIndex}
-                className="relative"
-              />
-            ))}
-          </Tab.List>
-          <Tab.Panels className="relative py-16 mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 xl:px-16">
-            <div className="flex -mx-5">
-              {features.map((feature, featureIndex) => (
-                <Tab.Panel
-                  static
-                  key={feature.name}
-                  className={clsx(
-                    'px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none',
-                    {
-                      'opacity-60': featureIndex !== selectedIndex,
-                    }
-                  )}
-                  style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
-                  aria-hidden={featureIndex !== selectedIndex}
-                >
-                  <div className="relative aspect-[844/428] w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image src={feature.image} alt="" layout="fill" sizes="52.75rem" />
-                  </div>
-                </Tab.Panel>
-              ))}
-            </div>
-            <div className="absolute inset-0 pointer-events-none rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels>
-        </>
+    <div
+      className={clsx(
+        'group relative flex w-[300px] flex-col items-start whitespace-normal rounded-md bg-white/80 p-6 md:w-[340px]'
       )}
-    </Tab.Group>
+      {...props}
+    >
+      <div className="absolute top-0 inline-block p-5 leading-none transform -translate-y-1/2 rounded-md shadow-lg bg-primary-600">
+        <feature.icon className="w-6 h-6 text-white" />
+      </div>
+      <h3 className="mt-4 text-xl text-gray-900 font-display">{feature.name}</h3>
+      <p className="mt-2 text-sm text-gray-800">{feature.description}</p>
+      <span className="flex-grow"></span>
+      <ButtonLink href={feature.ctaLink} className="mt-4 rounded-md">
+        Find out more
+      </ButtonLink>
+    </div>
   );
 }
 
 export function SecondaryFeatures() {
   return (
-    <section
-      id="secondary-features"
-      aria-labelledby="secondary-features-title"
-      className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
-    >
+    <section id="services" aria-labelledby="services-title" className="pt-16 pb-10 hero-bg sm:pb-16 sm:pt-20 lg:pb-20">
       <Container>
         <div className="max-w-2xl mx-auto md:text-center">
-          <h2 id="secondary-features-title" className="text-3xl tracking-tight font-display text-slate-900 sm:text-4xl">
-            The complex made simple.
+          <h2 id="services-title" className="text-3xl tracking-tight text-white font-display sm:text-4xl">
+            Services
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you complicate your everyday business tasks
-            instead.
+          <p className="mt-4 text-lg tracking-tight text-slate-200">
+            We love the study and design of impact assessments.
           </p>
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+        <div className="flex mt-10 overflow-x-auto overflow-y-visible md:mt-20 md:justify-center">
+          <div className="relative z-10 flex gap-4 px-4 pt-8 space-x-4 whitespace-nowrap md:grid md:grid-cols-2 md:space-x-0 md:whitespace-normal lg:grid-cols-3">
+            {features.map(feature => (
+              <Feature feature={feature} key={feature.name} />
+            ))}
+          </div>
+        </div>
       </Container>
     </section>
   );

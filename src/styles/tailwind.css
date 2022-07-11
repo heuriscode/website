@@ -8,5 +8,5 @@
 
 .hero-bg {
   background: rgb(33, 49, 16);
-  background: linear-gradient(45deg, rgba(33, 49, 16, 1) 0%, rgba(110, 164, 54, 1) 100%);
+  background: linear-gradient(45deg, #213110 0%, #59852c 100%);
 }
