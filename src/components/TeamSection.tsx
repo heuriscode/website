@@ -1,28 +1,30 @@
+import Image from 'next/image';
+import Jack from '@/images/team/jack.jpeg';
+import DanGregg from '@/images/team/dan-edit.jpeg';
+import DanHill from '@/images/team/dan-h-edit.jpeg';
+
 const people = [
   {
     name: 'Daniel Gregg',
     role: 'Principal Economist',
-    imageUrl:
-      'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    imageUrl: DanGregg,
+    bio: 'Daniel has worked as a natural resource/agricultural economist and agribusiness analyst for Central Queensland University, Waikato University, the University of Adelaide and the University of New England applying various analytical techniques, including supply chain analysis, and productivity and efficiency analysis.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Jack McNicol',
-    role: 'Principal Software Architect',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    role: 'Principal Architect / Developer',
+    imageUrl: Jack,
+    bio: 'Jack is a Solutions Architect navigating enterprise-level Australian businesses, corporations and educational institutions through their digital transformation journey.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
   {
     name: 'Daniel Hill',
     role: 'Economist',
-    imageUrl:
-      'https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    bio: 'Daniel Hill is an economist specialising in agriculture, rural development, water and natural resources, providing support for data analysis, research and policy advice.',
+    imageUrl: DanHill,
+    bio: 'Dan is an economist specialising in agriculture, rural development, water and natural resources, providing support for data analysis, research and policy advice.',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -49,7 +51,12 @@ export function TeamSection() {
                 <li key={person.name}>
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
-                      <img className="object-cover rounded-lg shadow-lg" src={person.imageUrl} alt="" />
+                      <Image
+                        className="object-cover rounded-lg shadow-lg"
+                        layout="fill"
+                        src={person.imageUrl}
+                        alt={person.name}
+                      />
                     </div>
                     <div className="space-y-1 text-lg font-medium leading-6">
                       <h3 className="">{person.name}</h3>

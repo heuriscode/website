@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import clsx from 'clsx';
+import DanGregg from '@/images/team/dan-edit.jpeg';
 
 const posts = [
   {
@@ -11,26 +12,24 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     author: {
-      name: 'Paul York',
+      name: 'Dan Gregg',
       href: '/blog/my-post',
-      imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: DanGregg,
     },
     readingTime: '6 min',
   },
   {
     title: 'How to use search engine optimization to drive sales',
     href: '/blog/my-post',
-    category: { name: 'Video', href: '/blog/my-post', color: 'bg-pink-100 text-pink-800' },
+    category: { name: 'News', href: '/blog/my-post', color: 'bg-orange-100 text-orange-800' },
     description:
       'Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.',
     date: 'Mar 10, 2020',
     datetime: '2020-03-10',
     author: {
-      name: 'Dessie Ryan',
+      name: 'Dan Gregg',
       href: '/blog/my-post',
-      imageUrl:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: DanGregg,
     },
     readingTime: '4 min',
   },
@@ -42,10 +41,9 @@ const posts = [
     date: 'Feb 12, 2020',
     datetime: '2020-02-12',
     author: {
-      name: 'Easer Collins',
+      name: 'Dan Gregg',
       href: '/blog/my-post',
-      imageUrl:
-        'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      imageUrl: DanGregg,
     },
     readingTime: '11 min',
   },
@@ -89,7 +87,14 @@ export function BlogSection() {
                 <div className="flex-shrink-0">
                   <a href={post.author.href}>
                     <span className="sr-only">{post.author.name}</span>
-                    <img className="w-10 h-10 rounded-full" src={post.author.imageUrl} alt="" />
+                    <div className="w-12 aspect-w-3 aspect-h-3">
+                      <Image
+                        className="w-10 h-10 rounded-full"
+                        src={post.author.imageUrl}
+                        layout="fill"
+                        alt={post.author.name}
+                      />
+                    </div>
                   </a>
                 </div>
                 <div className="ml-3">

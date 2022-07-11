@@ -53,6 +53,9 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
+      backgroundSize: {
+        '50%': '50%',
+      },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
         display: ['Lexend', ...defaultTheme.fontFamily.sans],

@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import net from 'vanta/dist/vanta.net.min';
+import * as THREE from 'three';
 
 import { ButtonLink } from '@/components/Button';
 import { Container } from '@/components/Container';
@@ -6,21 +9,50 @@ import logoLaravel from '@/images/logos/laravel.svg';
 import logoMirage from '@/images/logos/mirage.svg';
 import logoStatamic from '@/images/logos/statamic.svg';
 import logoStaticKit from '@/images/logos/statickit.svg';
-import logoTransistor from '@/images/logos/transistor.svg';
 import logoTuple from '@/images/logos/tuple.svg';
 import avaLogo from '@/images/logos/AVALogoGreenHorizontal.png';
 
 export function Hero() {
+  const bgdAnimated = useRef(null);
+  const [vantaEffect, setVantaEffect] = useState(0);
+
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(
+        net({
+          THREE: THREE,
+          el: bgdAnimated.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 100.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x59852c,
+          backgroundColor: 0xe3e3e3,
+          points: 20.0,
+          maxDistance: 19.0,
+          spacing: 14.0,
+        })
+      );
+    }
+    return () => {
+      if (vantaEffect) (vantaEffect as any).destroy();
+    };
+  }, [vantaEffect]);
+
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="max-w-4xl mx-auto text-5xl font-medium tracking-tight font-display text-primary sm:text-7xl">
+    <Container className="relative pt-20 pb-16 text-center lg:pt-32">
+      <div id="animated-bgd" ref={bgdAnimated} className="absolute left-0 right-0 -bottom-24 -top-24"></div>
+      <h1 className="relative max-w-4xl mx-auto text-5xl font-medium tracking-tight z-1 font-display text-primary sm:text-7xl">
         <span>Embracing </span>
         <span className="font-handwritten text-primary-500">Complexity</span>
       </h1>
-      <p className="max-w-2xl mx-auto mt-6 text-lg tracking-tight text-slate-700">
+      <p className="relative max-w-2xl mx-auto mt-6 text-lg tracking-tight z-1 text-slate-700">
         Economic analysis and Tech-driven innovation
       </p>
-      <div className="flex justify-center mt-10 space-x-6">
+      <div className="relative flex justify-center mt-10 space-x-6 z-1">
         <ButtonLink href="/contact">Contact us today</ButtonLink>
         <ButtonLink href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant="outline">
           <svg aria-hidden="true" className="flex-none w-3 h-3 fill-charcoal-600 group-active:fill-current">
