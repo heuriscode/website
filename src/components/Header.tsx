@@ -118,35 +118,35 @@ export function Header() {
             </li>
             <li className="hidden ml-12 md:block">
               <Link href="#about">
-                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-primary-500 hover:bg-opacity-10 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   About Us
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
               <Link href="#services">
-                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-primary-500 hover:bg-opacity-10 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
               <Link href="#team">
-                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-primary hover:bg-opacity-10 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Team
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
               <Link href="#news">
-                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-primary hover:bg-opacity-10 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   News
                 </a>
               </Link>
             </li>
             <li className="hidden ml-auto md:block">
               <Link href="/login">
-                <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-primary hover:bg-opacity-10 hover:text-slate-900">
+                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Sign in
                 </a>
               </Link>

@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Heuris - Economic analysis and tech-driven innovation" />
       </Head>
       <Header />
-      <main>
+      <main className="relative">
         <Hero />
         <AboutUsSection />
         {/* <PrimaryFeatures /> */}
