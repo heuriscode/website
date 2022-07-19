@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
-import { SecondaryFeatures } from '@/components/SecondaryFeatures';
+import { ServicesSection } from '@/components/ServicesSection';
 // import { Testimonials } from '@/components/Testimonials';
 import { BlogSection } from '@/components/BlogSection';
 import { TeamSection } from '@/components/TeamSection';
@@ -23,7 +23,7 @@ export default function Home() {
         <Hero />
         <AboutUsSection />
         {/* <PrimaryFeatures /> */}
-        <SecondaryFeatures />
+        <ServicesSection />
         <TeamSection />
         <BlogSection />
       </main>

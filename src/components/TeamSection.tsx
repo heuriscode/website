@@ -37,9 +37,13 @@ export function TeamSection() {
         <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl font-extrabold tracking-tight font-display sm:text-4xl">Our Team</h2>
-            <p className="text-xl text-gray-500">
-              Nulla quam felis, enim faucibus proin velit, ornare id pretium. Augue ultrices sed arcu condimentum
-              vestibulum suspendisse. Volutpat eu faucibus vivamus eget bibendum cras.
+            <p className="text-xl text-gray-700">A focus on solutions and &apsot;doing&apsot;</p>
+            <p className="text-gray-500">
+              Our team members balance innovation and research with an impact-driven focus. Achieving impactful change
+              requires those that can act to do so by moving beyond theory to application. We act on the changes we see
+              as important to achieve a more equitable and sustainable world. Our team work together to understand
+              sustainable development and agro-food supply chain issues merging theoretical rigour and innovation with
+              program design and web- technology expertise.
             </p>
           </div>
           <div className="lg:col-span-2">

@@ -4,7 +4,6 @@ import {
   faChartNetwork,
   faChartWaterfall,
   faEarthAsia,
-  faFaceRelieved,
   faMoneyBillWheat,
   faValueAbsolute,
 } from '@fortawesome/pro-solid-svg-icons';
@@ -62,7 +61,7 @@ function Feature({ feature, className = '', ...props }) {
   return (
     <div
       className={clsx(
-        'group relative flex w-[300px] flex-col items-start whitespace-normal rounded-md bg-white/80 p-6 md:w-[340px]'
+        'group relative mb-8 flex w-[300px] flex-col items-start whitespace-normal rounded-md bg-white/80 p-6 md:w-[340px]'
       )}
       {...props}
     >
@@ -79,7 +78,7 @@ function Feature({ feature, className = '', ...props }) {
   );
 }
 
-export function SecondaryFeatures() {
+export function ServicesSection() {
   return (
     <section id="services" aria-labelledby="services-title" className="pt-16 pb-10 hero-bg sm:pb-16 sm:pt-20 lg:pb-20">
       <Container>
@@ -88,7 +87,9 @@ export function SecondaryFeatures() {
             Services
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-200">
-            We love the study and design of impact assessments.
+            We apply economic and behavioural theory, along with expertise in policy design, impact evaluation, and data
+            science/analytics to define problems, consider solution pathways, and to measure the <br />
+            effectiveness of proposed solutions.
           </p>
         </div>
         <div className="flex mt-10 overflow-x-auto overflow-y-visible md:mt-20 md:justify-center">

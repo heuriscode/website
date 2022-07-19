@@ -14,8 +14,8 @@ const posts = [
     },
     description:
       'ADaPTing Ugandan coffee supply chains - Digital procurement and payment systems to achieve inclusive and scalable agro-food value chains.',
-    date: 'Oct 16, 2021',
-    datetime: '2021-10-16',
+    date: 'March 16, 2022',
+    datetime: '2022-03-16',
     author: {
       name: 'Dan Gregg',
       href: '/blog/adapting-ugandan-coffee-supply-chains',
@@ -33,8 +33,8 @@ const posts = [
     },
     description:
       'The Crowdy Three and how traditional supply chain models fail as development mechanisms for smallholder farmers.',
-    date: 'May 17, 2020',
-    datetime: '2020-05-17',
+    date: 'May 17, 2022',
+    datetime: '2022-05-17',
     author: {
       name: 'Daniel Hill',
       href: '/blog/the-crowdy-three-in-agro-food-supply-chains',
@@ -52,8 +52,8 @@ const posts = [
     },
     description:
       'The analysis of behavioural change covers a large area of study crossing multiple disciplines including social studies, economics and psychology.',
-    date: 'May 5, 2020',
-    datetime: '2020-05-5',
+    date: 'May 5, 2022',
+    datetime: '2022-05-5',
     author: {
       name: 'Dan Hill',
       href: '/blog/establishing-behaviour-change',
