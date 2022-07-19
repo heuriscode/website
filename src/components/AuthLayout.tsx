@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import net from 'vanta/dist/vanta.net.min';
+import * as THREE from 'three';
 
 export function AuthLayout({ children }) {
   const bgdAnimated = useRef(null);
@@ -9,6 +10,7 @@ export function AuthLayout({ children }) {
     if (!vantaEffect && window?.innerWidth > 768) {
       setVantaEffect(
         net({
+          THREE,
           el: bgdAnimated.current,
           mouseControls: true,
           touchControls: true,

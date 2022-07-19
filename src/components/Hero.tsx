@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import net from 'vanta/dist/vanta.net.min';
+import * as THREE from 'three';
 
 import { ButtonLink } from '@/components/Button';
 import { Container } from '@/components/Container';
@@ -20,6 +21,7 @@ export function Hero() {
     if (!vantaEffect) {
       setVantaEffect(
         net({
+          THREE,
           el: bgdAnimated.current,
           mouseControls: true,
           touchControls: true,
