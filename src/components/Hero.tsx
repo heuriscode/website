@@ -5,12 +5,13 @@ import * as THREE from 'three';
 
 import { ButtonLink } from '@/components/Button';
 import { Container } from '@/components/Container';
-import logoLaravel from '@/images/logos/laravel.svg';
-import logoMirage from '@/images/logos/mirage.svg';
-import logoStatamic from '@/images/logos/statamic.svg';
-import logoStaticKit from '@/images/logos/statickit.svg';
-import logoTuple from '@/images/logos/tuple.svg';
 import avaLogo from '@/images/logos/AVALogoGreenHorizontal.png';
+import ausFarm from '@/images/logos/Australian-Farm-Institute.png';
+import CentralLandCouncilLogo from '@/images/logos/CentralLandCouncilLogo.jpg';
+// import FarmingfortheFuture from '@/images/logos/Farming+for+the+Future+Logo.png';
+import MacDoch_Foundation2021 from '@/images/logos/MacDoch_Foundation2021.png';
+import PewCharitableTrustslogo from '@/images/logos/PewCharitableTrustslogo.png';
+import University_of_South_Australia from '@/images/logos/University_of_South_Australia.png';
 
 export function Hero() {
   const bgdAnimated = useRef(null);
@@ -73,23 +74,33 @@ export function Hero() {
                   </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
-                  <Image src={logoTuple} alt="Tuple" layout="fixed" unoptimized />
+                  <div className="h-auto w-[120px]">
+                    <Image src={University_of_South_Australia} alt="Tuple" layout="responsive" unoptimized />
+                  </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
-                  <Image src={logoStaticKit} alt="StaticKit" layout="fixed" unoptimized />
+                  <div className="h-auto w-[120px] mix-blend-multiply">
+                    <Image src={CentralLandCouncilLogo} alt="StaticKit" layout="responsive" unoptimized />
+                  </div>
                 </li>
               </ul>
             </li>
             <li>
               <ul className="grid gap-4 grid-col-2 sm:grid-cols-3 sm:gap-8">
                 <li className="flex items-center justify-center w-full">
-                  <Image src={logoMirage} alt="Mirage" layout="fixed" unoptimized />
+                  <div className="h-auto w-[120px]">
+                    <Image src={MacDoch_Foundation2021} alt="Mirage" layout="responsive" unoptimized />
+                  </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
-                  <Image src={logoLaravel} alt="Laravel" layout="fixed" unoptimized />
+                  <div className="h-auto w-[120px]">
+                    <Image src={PewCharitableTrustslogo} alt="Laravel" layout="responsive" unoptimized />
+                  </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
-                  <Image src={logoStatamic} alt="Statamic" layout="fixed" unoptimized />
+                  <div className="h-auto w-[120px] mix-blend-multiply">
+                    <Image src={ausFarm} alt="Statamic" layout="responsive" unoptimized />
+                  </div>
                 </li>
               </ul>
             </li>

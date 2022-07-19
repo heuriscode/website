@@ -6,7 +6,7 @@ const supportLinks = [
     name: 'Economic Analysis',
     href: '#',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
+      'Leading data collection expertise including behavioural analysis and rapid assessment methodologies for impact evaluation.',
     icon: CashIcon,
   },
   {
@@ -43,10 +43,7 @@ export function AboutUsSection() {
           <h2 className="text-4xl font-extrabold tracking-tight text-white font-display md:text-5xl lg:text-6xl">
             About Us
           </h2>
-          <p className="max-w-3xl mt-6 text-xl text-gray-300">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-            laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
-          </p>
+          <p className="max-w-3xl mt-6 text-xl text-gray-300">Knowledge and theory underpinned by a creative mindset</p>
         </div>
       </div>
 

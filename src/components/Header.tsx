@@ -61,38 +61,38 @@ function MobileNavigation() {
                 className="absolute inset-x-0 p-6 mt-4 space-y-4 text-lg tracking-tight origin-top bg-white shadow-xl top-full rounded-2xl text-slate-900 ring-1 ring-slate-900/5"
               >
                 <li>
-                  <Link href="#about">
+                  <Link href="/#about">
                     <a className="block w-full" onClick={() => close()}>
                       About Us
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#services">
+                  <Link href="/#services">
                     <a className="block w-full" onClick={() => close()}>
                       Services
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#team">
+                  <Link href="/#team">
                     <a className="block w-full" onClick={() => close()}>
                       Team
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#news">
+                  <Link href="/#blog">
                     <a className="block w-full" onClick={() => close()}>
-                      News
+                      Blog
                     </a>
                   </Link>
                 </li>
-                <li className="pt-4 border-t border-slate-300/40">
+                {/* <li className="pt-4 border-t border-slate-300/40">
                   <Link href="/login">
                     <a className="block w-full">Sign in</a>
                   </Link>
-                </li>
+                </li> */}
               </Popover.Panel>
             </Transition.Child>
           </Transition.Root>
@@ -109,7 +109,7 @@ export function Header() {
         <nav className="relative z-50 text-sm">
           <ul className="flex items-center">
             <li>
-              <Link href="#">
+              <Link href="/#">
                 <a>
                   <span className="sr-only">Home</span>
                   <Logo className="w-auto h-10" />
@@ -117,41 +117,41 @@ export function Header() {
               </Link>
             </li>
             <li className="hidden ml-12 md:block">
-              <Link href="#about">
+              <Link href="/#about">
                 <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   About Us
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="#services">
+              <Link href="/#services">
                 <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Services
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="#team">
+              <Link href="/#team">
                 <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Team
                 </a>
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="#news">
+              <Link href="/#blog">
                 <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
-                  News
+                  Blog
                 </a>
               </Link>
             </li>
-            <li className="hidden ml-auto md:block">
+            {/* <li className="hidden ml-auto md:block">
               <Link href="/login">
                 <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Sign in
                 </a>
               </Link>
-            </li>
-            <li className="ml-auto md:ml-8">
+            </li> */}
+            <li className="ml-auto md:block">
               <ButtonLink href="/contact" color="primary">
                 <span>
                   Contact us<span className="hidden lg:inline"> today</span>

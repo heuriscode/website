@@ -7,32 +7,32 @@ export function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
-        <div className="py-16">
+        <div className="flex items-center justify-between py-16">
           <Logo className="w-auto h-10 mx-auto" />
-          <nav className="mt-10 text-sm" aria-label="quick links">
+          <nav className="text-sm" aria-label="quick links">
             <ul className="flex justify-center -my-1 space-x-6">
               <li>
-                <Link href="#about">
+                <Link href="/#about">
                   <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                     About us
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="#services">
+                <Link href="/#services">
                   <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                     Services
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="#team">
+                <Link href="/#team">
                   <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">Team</a>
                 </Link>
               </li>
               <li>
-                <Link href="#news">
-                  <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">News</a>
+                <Link href="/#blog">
+                  <a className="px-2 py-1 rounded-lg text-slate-700 hover:bg-slate-100 hover:text-slate-900">Blog</a>
                 </Link>
               </li>
             </ul>
@@ -48,7 +48,7 @@ export function Footer() {
                 </svg>
               </a>
             </Link>
-            <Link href="#">
+            <Link href="/#">
               <a className="group">
                 <span className="sr-only">Heuris on GitHub</span>
                 <svg aria-hidden="true" className="w-6 h-6 fill-slate-500 group-hover:fill-slate-700">

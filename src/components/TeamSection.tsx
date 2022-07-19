@@ -34,7 +34,7 @@ export function TeamSection() {
   return (
     <section id="team" aria-labelledby="team-title" className="bg-gray-100">
       <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+        <div className="space-y-12">
           <div className="space-y-5 sm:space-y-4">
             <h2 className="text-3xl font-extrabold tracking-tight font-display sm:text-4xl">Our Team</h2>
             <p className="text-xl text-gray-500">
@@ -45,7 +45,7 @@ export function TeamSection() {
           <div className="lg:col-span-2">
             <ul
               role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
+              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 md:grid-cols-3 lg:gap-x-8"
             >
               {people.map(person => (
                 <li key={person.name}>
@@ -62,7 +62,7 @@ export function TeamSection() {
                       <h3 className="font-display">{person.name}</h3>
                       <p className="text-primary-600">{person.role}</p>
                     </div>
-                    <div className="text-lg">
+                    <div className="text-base">
                       <p className="text-gray-500">{person.bio}</p>
                     </div>
 
