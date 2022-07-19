@@ -19,6 +19,7 @@ export default function Document(props) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Zilla+Slab+Highlight&family=Lexend:wght@400;500&display=swap"
         />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" async></script>
       </Head>
       <body className="flex flex-col h-full">
         <Main />

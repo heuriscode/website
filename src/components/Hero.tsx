@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import net from 'vanta/dist/vanta.net.min';
-import * as THREE from 'three';
 
 import { ButtonLink } from '@/components/Button';
 import { Container } from '@/components/Container';
@@ -21,7 +20,6 @@ export function Hero() {
     if (!vantaEffect) {
       setVantaEffect(
         net({
-          THREE: THREE,
           el: bgdAnimated.current,
           mouseControls: true,
           touchControls: true,
@@ -52,7 +50,7 @@ export function Hero() {
           <span className="font-handwritten text-primary-500">Complexity</span>
         </h1>
         <p className="relative max-w-2xl mx-auto mt-6 text-lg tracking-tight z-1 text-slate-700">
-          Economic analysis and Tech-driven innovation
+          Economic analysis and tech-driven innovation
         </p>
         <div className="relative flex justify-center mt-10 space-x-6 z-1">
           <ButtonLink href="/contact">Contact us today</ButtonLink>
@@ -64,7 +62,7 @@ export function Hero() {
           </ButtonLink>
         </div>
         <div className="mt-36 lg:mt-44">
-          <p className="text-base font-display text-slate-900">Trusted by these six companies so far</p>
+          <p className="relative text-base font-display text-slate-900">Trusted by these six companies so far</p>
           <ul className="flex items-center justify-center mt-8 space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0 xl:space-x-12">
             <li>
               <ul className="grid gap-4 grid-col-2 sm:grid-cols-3 sm:gap-8">
