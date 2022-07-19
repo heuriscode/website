@@ -41,9 +41,12 @@ export function AboutUsSection() {
         </div>
         <div className="relative px-4 py-24 mx-auto max-w-7xl sm:py-32 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-extrabold tracking-tight text-white font-display md:text-5xl lg:text-6xl">
-            About Us
+            At Heuris
           </h2>
-          <p className="max-w-3xl mt-6 text-xl text-gray-300">Knowledge and theory underpinned by a creative mindset</p>
+          <p className="max-w-3xl mt-6 text-xl text-gray-300">
+            We use our knowledge and theory, underpinned by a creative mindset, to enabling the discovery of new and
+            innovative solutions to the most complex problems.
+          </p>
         </div>
       </div>
 
