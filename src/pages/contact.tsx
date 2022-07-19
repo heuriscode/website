@@ -20,10 +20,7 @@ export default function Login() {
             </a>
           </Link>
           <h2 className="mt-4 text-lg font-semibold text-gray-900">Contact us</h2>
-          <p className="mt-2 text-sm text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus arcu odio pretium, semper adipiscing vitae
-            nulla.
-          </p>
+          <p className="mt-2 text-sm text-gray-700">Find out what make Heuris so different from other companies.</p>
         </div>
         <div className="mt-6">
           <div className="mt-6">
