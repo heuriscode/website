@@ -20,7 +20,7 @@ const supportLinks = [
     name: 'Tech Innovation',
     href: '/contact',
     description:
-      'We help businesses and organizations innovate and stay ahead of the curve. We offer consulting, and development services to help you identify and implement a solution that best matches your needs.',
+      'We help businesses and organisations innovate and stay ahead of the curve. We offer consulting, and development services to help you identify and implement a solution that best matches your needs.',
     icon: ChipIcon,
   },
 ];
