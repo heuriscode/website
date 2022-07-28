@@ -1,10 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  faBrain,
   faChartMixed,
   faChartNetwork,
   faChartWaterfall,
   faEarthAsia,
+  faFileCheck,
+  faHeadSideBrain,
+  faLink,
   faMoneyBillWheat,
+  faRobotAstromech,
+  faSeedling,
   faValueAbsolute,
 } from '@fortawesome/pro-solid-svg-icons';
 import clsx from 'clsx';
@@ -16,44 +22,42 @@ const features = [
   {
     name: 'Behavioural analysis',
     description:
-      'The analysis of behaviour change has important implications for program evaluation and intervention design. Understanding behavioural biases and control points in decision making can better inform how you design, adapt, and target interventions and improve predictions around eventual behaviour.',
-    ctaLink: '#',
-    icon: props => <FontAwesomeIcon icon={faChartNetwork} {...props} />,
+      'Behavioural analysis, experimental economics, behavioural interventions, behavioural change measurement and evaluation, and program learning insights/systems for behavioural change.',
+    ctaLink: '/services/behavioural-analysis',
+    icon: props => <FontAwesomeIcon icon={faHeadSideBrain} {...props} />,
   },
   {
-    name: 'Productivity analysis',
-    description:
-      'Productivity analysis helps you understand how efficient you are in converting inputs influence your outputs and can decompose this efficiency to understand what changes can be made to improve efficiency.',
-    ctaLink: '#',
+    name: 'Econometric analysis',
+    description: 'Productivity and efficiency analysis, non-market valuation, impact evaluation.',
+    ctaLink: '/services/econometric-analysis',
     icon: props => <FontAwesomeIcon icon={faChartMixed} {...props} />,
   },
   {
-    name: 'Impact evaluation design',
+    name: 'Policy review and analysis',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
-    ctaLink: '#',
-    icon: props => <FontAwesomeIcon icon={faValueAbsolute} {...props} />,
+      'Water policy, development policy, agricultural policy, environmental policy, impact pathways, policy design, implicit incentives, policy evaluation.',
+    ctaLink: '/services/policy-review-analysis',
+    icon: props => <FontAwesomeIcon icon={faFileCheck} {...props} />,
   },
   {
-    name: 'Water & natural resource policy',
+    name: 'Supply chain innovation',
     description:
-      'At Heuris we are leading experts in water and natural resource economics policy. We have extensive knowledge and experience of investment appraisal process, water allocation planning, and water and natural capital markets',
-    ctaLink: '#',
-    icon: props => <FontAwesomeIcon icon={faChartWaterfall} {...props} />,
+      'Smallholder-inclusive value chains, agro-food systems, achieving Sustainable Development Goals (SDGs), local food systems.',
+    ctaLink: '/services/supply-chain-innovation',
+    icon: props => <FontAwesomeIcon icon={faLink} {...props} />,
   },
   {
-    name: 'Natural capital & ecosystem services',
-    description:
-      'Natural capital is the stock natural ecosystems such as soil, water, air, plants, and animals that in combination provide a range of benefits. These benefits, or ecosystem services, go beyond the provision of materials such as timber and include regulation, cultural and supporting services in which humans derive benefits from.',
-    ctaLink: '#',
-    icon: props => <FontAwesomeIcon icon={faEarthAsia} {...props} />,
+    name: 'Sustainability systems',
+    description: 'Sustainability communication, sustainability governance, ESG, non-extractive development models.',
+    ctaLink: '/services/sustainability-systems',
+    icon: props => <FontAwesomeIcon icon={faSeedling} {...props} />,
   },
   {
-    name: 'Agri-food supply chain policy ',
+    name: 'Web technologies',
     description:
-      'Linked processes in the agricultural production of food, involving all stages of production, processing, trading, distribution, and consumption. These supply chains are responsible for providing essential products and underpin value-creation in agro-food industries.',
-    ctaLink: '#',
-    icon: props => <FontAwesomeIcon icon={faMoneyBillWheat} {...props} />,
+      'Quality assurance, certification systems, agro-food procurement and traceability systems, automated data collection/evaluation programs.',
+    ctaLink: '/services/web-technologies',
+    icon: props => <FontAwesomeIcon icon={faRobotAstromech} {...props} />,
   },
 ];
 
