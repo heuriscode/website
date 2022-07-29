@@ -3,7 +3,11 @@ import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 import { getError } from '@/utils/getError';
 
 const sesClient = new SESClient({
-    region: process.env.AWS_REGION,
+    region: process.env.REGION_AWS,
+    credentials: {
+        accessKeyId: process.env.ACCESS_KEY_AWS,
+        secretAccessKey: process.env.SECRET_KEY_AWS,
+    }
 });
 
 async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
@@ -11,9 +15,6 @@ async function sendEmail(req: NextApiRequest, res: NextApiResponse) {
     try {
         const params = {
             Destination: {
-                // CcAddresses: [
-                //     /* more items */
-                // ],
                 ToAddresses: [
                     "webadmin@heuris.com.au",
                 ],
