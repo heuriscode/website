@@ -24,7 +24,7 @@
     "@heroicons/react": "1.0.6",
     "@mdx-js/loader": "2.1.5",
     "@mdx-js/react": "2.1.5",
-    "@next/mdx": "12.3.2",
+    "@next/mdx": "13.1.1",
     "@plaiceholder/next": "2.5.0",
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/forms": "0.5.3",
@@ -33,7 +33,7 @@
     "autoprefixer": "10.4.13",
     "clsx": "1.2.1",
     "focus-visible": "5.2.0",
-    "next": "12.3.2",
+    "next": "13.1.1",
     "plaiceholder": "2.5.0",
     "postcss-focus-visible": "7.1.0",
     "react": "18.2.0",
@@ -48,7 +48,7 @@
     "@types/node": "18.11.9",
     "@types/react": "18.0.24",
     "eslint": "8.26.0",
-    "eslint-config-next": "12.3.2",
+    "eslint-config-next": "13.1.1",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13"
   }
