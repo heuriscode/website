@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import clsx from 'clsx';
 import DanGregg from '@/images/team/dan-edit.jpeg';
 import DanHill from '@/images/team/dan-h-edit.jpeg';
@@ -103,10 +103,10 @@ export function BlogSection() {
                     <div className="w-12 aspect-w-3 aspect-h-3">
                       <Image
                         className="object-cover w-10 h-10 rounded-full"
-                        layout="fill"
                         src={post.author.imageUrl}
                         alt={post.author.name}
-                      />
+                        fill
+                        sizes="100vw" />
                     </div>
                   </a>
                 </div>

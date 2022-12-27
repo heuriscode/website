@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
@@ -68,14 +68,7 @@ export function Faqs() {
         Frequently asked questions
       </h2>
       <div className="absolute top-0 left-1/2 -translate-x-[30%] -translate-y-[25%]">
-        <Image
-          src={backgroundImage}
-          alt=""
-          width={1558}
-          height={946}
-          layout="fixed"
-          unoptimized
-        />
+        <Image src={backgroundImage} alt="" width={1558} height={946} unoptimized />
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
@@ -105,5 +98,5 @@ export function Faqs() {
         </ul>
       </Container>
     </section>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import net from 'vanta/dist/vanta.net.min';
 import * as THREE from 'three';
@@ -70,17 +70,29 @@ export function Hero() {
               <ul className="grid gap-4 grid-col-2 sm:grid-cols-3 sm:gap-8">
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px]">
-                    <Image src={avaLogo} alt="Ava" layout="responsive" unoptimized />
+                    <Image src={avaLogo} alt="Ava" unoptimized sizes="100vw" className="relative w-full h-auto" />
                   </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px]">
-                    <Image src={University_of_South_Australia} alt="Tuple" layout="responsive" unoptimized />
+                    <Image
+                      src={University_of_South_Australia}
+                      alt="University of South Australia"
+                      unoptimized
+                      sizes="100vw"
+                      className="relative w-full h-auto"
+                    />
                   </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px] mix-blend-multiply">
-                    <Image src={CentralLandCouncilLogo} alt="StaticKit" layout="responsive" unoptimized />
+                    <Image
+                      src={CentralLandCouncilLogo}
+                      alt="Central Land Council"
+                      unoptimized
+                      sizes="100vw"
+                      className="relative w-full h-auto"
+                    />
                   </div>
                 </li>
               </ul>
@@ -89,17 +101,29 @@ export function Hero() {
               <ul className="grid gap-4 grid-col-2 sm:grid-cols-3 sm:gap-8">
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px]">
-                    <Image src={MacDoch_Foundation2021} alt="Mirage" layout="responsive" unoptimized />
+                    <Image
+                      src={MacDoch_Foundation2021}
+                      alt="MacDoch Foundation"
+                      unoptimized
+                      sizes="100vw"
+                      className="relative w-full h-auto"
+                    />
                   </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px]">
-                    <Image src={PewCharitableTrustslogo} alt="Laravel" layout="responsive" unoptimized />
+                    <Image
+                      src={PewCharitableTrustslogo}
+                      alt="Pew Charitable Trusts"
+                      unoptimized
+                      sizes="100vw"
+                      className="relative w-full h-auto"
+                    />
                   </div>
                 </li>
                 <li className="flex items-center justify-center w-full">
                   <div className="h-auto w-[120px] mix-blend-multiply">
-                    <Image src={ausFarm} alt="Statamic" layout="responsive" unoptimized />
+                    <Image src={ausFarm} alt="Statamic" unoptimized sizes="100vw" className="relative w-full h-auto" />
                   </div>
                 </li>
               </ul>

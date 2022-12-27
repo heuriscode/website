@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Jack from '@/images/team/jack.jpeg';
 import DanGregg from '@/images/team/dan-edit.jpeg';
 import DanHill from '@/images/team/dan-h-edit.jpeg';
@@ -55,10 +55,10 @@ export function TeamSection() {
                     <div className="aspect-w-3 aspect-h-2">
                       <Image
                         className="rounded-lg object-cover shadow-lg"
-                        layout="fill"
                         src={person.imageUrl}
                         alt={person.name}
-                      />
+                        fill
+                        sizes="100vw" />
                     </div>
                     <div className="space-y-1 text-lg font-medium leading-6">
                       <h3 className="font-display">{person.name}</h3>
