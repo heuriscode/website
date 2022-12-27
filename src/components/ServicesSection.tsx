@@ -1,22 +1,12 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBrain,
-  faChartMixed,
-  faChartNetwork,
-  faChartWaterfall,
-  faEarthAsia,
-  faFileCheck,
-  faHeadSideBrain,
-  faLink,
-  faMoneyBillWheat,
-  faRobotAstromech,
-  faSeedling,
-  faValueAbsolute,
-} from '@fortawesome/pro-solid-svg-icons';
 import clsx from 'clsx';
-
 import { Container } from '@/components/Container';
 import { ButtonLink } from './Button';
+import { ChartMixedIcon } from './icons/ChartMixedIcon';
+import { FileCheckIcon } from './icons/FileCheckIcon';
+import { HeadSideBrainIcon } from './icons/HeadSideBrainIcon';
+import { LinkIcon } from './icons/LinkIcon';
+import { SeedlingIcon } from './icons/SeedlingIcon';
+import { RobotAstromechIcon } from './icons/RobotAstromechIcon';
 
 const features = [
   {
@@ -24,40 +14,40 @@ const features = [
     description:
       'Behavioural analysis, experimental economics, behavioural interventions, behavioural change measurement and evaluation, and program learning insights/systems for behavioural change.',
     ctaLink: '/services/behavioural-analysis',
-    icon: props => <FontAwesomeIcon icon={faHeadSideBrain} {...props} />,
+    icon: props => <HeadSideBrainIcon {...props} />,
   },
   {
     name: 'Econometric analysis',
     description: 'Productivity and efficiency analysis, non-market valuation, impact evaluation.',
     ctaLink: '/services/econometric-analysis',
-    icon: props => <FontAwesomeIcon icon={faChartMixed} {...props} />,
+    icon: props => <ChartMixedIcon {...props} />,
   },
   {
     name: 'Policy review and analysis',
     description:
       'Water policy, development policy, agricultural policy, environmental policy, impact pathways, policy design, implicit incentives, policy evaluation.',
     ctaLink: '/services/policy-review-analysis',
-    icon: props => <FontAwesomeIcon icon={faFileCheck} {...props} />,
+    icon: props => <FileCheckIcon {...props} />,
   },
   {
     name: 'Supply chain innovation',
     description:
       'Smallholder-inclusive value chains, agro-food systems, achieving Sustainable Development Goals (SDGs), local food systems.',
     ctaLink: '/services/supply-chain-innovation',
-    icon: props => <FontAwesomeIcon icon={faLink} {...props} />,
+    icon: props => <LinkIcon {...props} />,
   },
   {
     name: 'Sustainability systems',
     description: 'Sustainability communication, sustainability governance, ESG, non-extractive development models.',
     ctaLink: '/services/sustainability-systems',
-    icon: props => <FontAwesomeIcon icon={faSeedling} {...props} />,
+    icon: props => <SeedlingIcon {...props} />,
   },
   {
     name: 'Web technologies',
     description:
       'Quality assurance, certification systems, agro-food procurement and traceability systems, automated data collection/evaluation programs.',
     ctaLink: '/services/web-technologies',
-    icon: props => <FontAwesomeIcon icon={faRobotAstromech} {...props} />,
+    icon: props => <RobotAstromechIcon {...props} />,
   },
 ];
 

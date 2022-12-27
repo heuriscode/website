@@ -8,3 +8,7 @@ export interface SuccessResponse<Data> {
     success: true;
     data: Data;
 }
+
+export interface IconProps {
+  className: string;
+}
