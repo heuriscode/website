@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import clsx from 'clsx';
 import DanGregg from '@/images/team/dan-edit.jpeg';
 import DanHill from '@/images/team/dan-h-edit.jpeg';

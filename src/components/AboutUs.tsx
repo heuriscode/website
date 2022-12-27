@@ -1,5 +1,5 @@
 import { BanknotesIcon, ChartBarSquareIcon, CpuChipIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 const supportLinks = [
   {

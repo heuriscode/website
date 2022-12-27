@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Jack from '@/images/team/jack.jpeg';
 import DanGregg from '@/images/team/dan-edit.jpeg';
 import DanHill from '@/images/team/dan-h-edit.jpeg';
