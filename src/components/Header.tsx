@@ -61,31 +61,23 @@ function MobileNavigation() {
                 className="absolute inset-x-0 p-6 mt-4 space-y-4 text-lg tracking-tight origin-top bg-white shadow-xl top-full rounded-2xl text-slate-900 ring-1 ring-slate-900/5"
               >
                 <li>
-                  <Link href="/#about">
-                    <a className="block w-full" onClick={() => close()}>
-                      About Us
-                    </a>
+                  <Link href="/#about" className="block w-full" onClick={() => close()}>
+                    About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#services">
-                    <a className="block w-full" onClick={() => close()}>
-                      Services
-                    </a>
+                  <Link href="/#services" className="block w-full" onClick={() => close()}>
+                    Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#team">
-                    <a className="block w-full" onClick={() => close()}>
-                      Team
-                    </a>
+                  <Link href="/#team" className="block w-full" onClick={() => close()}>
+                    Team
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#blog">
-                    <a className="block w-full" onClick={() => close()}>
-                      Blog
-                    </a>
+                  <Link href="/#blog" className="block w-full" onClick={() => close()}>
+                    Blog
                   </Link>
                 </li>
                 {/* <li className="pt-4 border-t border-slate-300/40">
@@ -110,45 +102,45 @@ export function Header() {
           <ul className="flex items-center">
             <li>
               <Link href="/#">
-                <a>
-                  <span className="sr-only">Home</span>
-                  <Logo className="w-auto h-10" />
-                </a>
+                <span className="sr-only">Home</span>
+                <Logo className="w-auto h-10" />
               </Link>
             </li>
             <li className="hidden ml-12 md:block">
-              <Link href="/#about">
-                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
-                  About Us
-                </a>
+              <Link
+                href="/#about"
+                className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900"
+              >
+                About Us
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="/#services">
-                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
-                  Services
-                </a>
+              <Link
+                href="/#services"
+                className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900"
+              >
+                Services
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="/#team">
-                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
-                  Team
-                </a>
+              <Link
+                href="/#team"
+                className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900"
+              >
+                Team
               </Link>
             </li>
             <li className="hidden ml-6 md:block">
-              <Link href="/#blog">
-                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
-                  Blog
-                </a>
+              <Link
+                href="/#blog"
+                className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900"
+              >
+                Blog
               </Link>
             </li>
             {/* <li className="hidden ml-auto md:block">
-              <Link href="/login">
-                <a className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
+              <Link href="/login" className="px-2 py-1 rounded-lg bg-white/40 text-slate-700 hover:bg-white hover:text-slate-900">
                   Sign in
-                </a>
               </Link>
             </li> */}
             <li className="ml-auto md:block">

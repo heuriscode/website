@@ -24,7 +24,7 @@ export default function BlogLayout({ children, title, summary, subtitle }: BlogL
   return (
     <>
       <Head>
-        <title>{title} - Blog - Heuris</title>
+        <title>{`${title} - Blog - Heuris`}</title>
         <meta name="description" content={summary} />
       </Head>
       <Header />

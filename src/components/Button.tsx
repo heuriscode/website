@@ -30,8 +30,6 @@ export function Button({ variant = 'solid', color = 'charcoal', className = '', 
 
 export function ButtonLink({ variant = 'solid', color = 'charcoal', href, className = '', ...props }) {
   return (
-    <Link href={href}>
-      <a className={clsx(baseStyles[variant], variantStyles[variant][color], className)} {...props} />
-    </Link>
+    <Link href={href} className={clsx(baseStyles[variant], variantStyles[variant][color], className)} {...props} />
   );
 }
