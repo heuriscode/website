@@ -34,7 +34,7 @@
     "vanta": "0.5.24"
   },
   "devDependencies": {
-    "@types/mdx": "2.0.7",
+    "@types/mdx": "2.0.8",
     "@types/node": "18.18.0",
     "@types/react": "18.2.23",
     "eslint": "8.50.0",
