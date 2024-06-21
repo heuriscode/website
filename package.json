@@ -22,7 +22,7 @@
     "@tailwindcss/forms": "0.5.7",
     "@tailwindcss/typography": "0.5.13",
     "@tanstack/react-query": "4.36.1",
-    "autoprefixer": "10.4.16",
+    "autoprefixer": "10.4.19",
     "clsx": "1.2.1",
     "focus-visible": "5.2.0",
     "next": "13.5.6",
