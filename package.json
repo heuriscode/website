@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/mdx": "2.0.13",
-    "@types/node": "18.19.43",
+    "@types/node": "18.19.60",
     "@types/react": "18.3.3",
     "eslint": "8.57.0",
     "eslint-config-next": "13.5.6",
